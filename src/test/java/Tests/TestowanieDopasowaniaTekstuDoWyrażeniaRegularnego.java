@@ -2,8 +2,11 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 
-public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
+import static org.testng.Assert.assertEquals;
+
+public class TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego extends TestBase {
 
 
 
@@ -20,10 +23,12 @@ public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.clickToKonfiguracjeArchiwalne();
-        page.loadToKonfiguracjeArchiwalne();
-        page.checkKonfiguracjeArchiwalne();
-
+        page.clickOnTabTestWyrazenRegularnych();
+        page.clickOnTabDopasowanie();
+        page.sendTekstWejsciowy();
+        page.sendwyrazenieregularne();
+        page.clickonbuttwynikdopasowania();
+        page.checkwynikdopasowania();
 
     }
 }

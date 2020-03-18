@@ -3,7 +3,7 @@ package Tests;
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
+public class PrzeglądanieRaportówStatystyk extends TestBase {
 
 
 
@@ -20,10 +20,8 @@ public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.clickToKonfiguracjeArchiwalne();
-        page.loadToKonfiguracjeArchiwalne();
-        page.checkKonfiguracjeArchiwalne();
-
+        page.clickOnTabStatystyki();
 
     }
+
 }

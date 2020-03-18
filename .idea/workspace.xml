@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaPoziomówLogowaniaModułów.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliRoutingu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieKonfiguracjiLoadBalancera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieListyKonfiguracjiArchiwalnychSIPProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ZapisKonfiguracjiSIPProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieRaportówStatystyk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +37,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera.asUserShouldBeAbleToLoggin">
-    <configuration name="PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin">
+    <configuration name="TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -50,7 +47,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -58,7 +55,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +64,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -76,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrzeglądaniePoziomówLogowaniaModułówSIPProxy.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -85,7 +82,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PrzeglądaniePoziomówLogowaniaModułówSIPProxy" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -94,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Przeglądanie_tabeli_routingu_DP.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WczytanieKonfiguracjiArchiwalnejSIPProxy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -103,26 +100,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_tabeli_routingu_DP" />
-      <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Przeglądanie_tabeli_routingu_SP" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Orange123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_tabeli_routingu_SP" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WczytanieKonfiguracjiArchiwalnejSIPProxy.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Orange123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
+      <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera" />
-        <item itemvalue="TestNG.PrzeglądaniePoziomówLogowaniaModułówSIPProxy.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_tabeli_routingu_DP.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_tabeli_routingu_SP" />
+        <item itemvalue="TestNG.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
+        <item itemvalue="TestNG.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
+        <item itemvalue="TestNG.WczytanieKonfiguracjiArchiwalnejSIPProxy.asUserShouldBeAbleToLoggin" />
       </list>
     </recent_temporary>
   </component>
@@ -153,25 +150,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1584370669127">
+    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584443798775">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584370669127" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1584370669127">
+    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1584443798775" />
+    <state x="454" y="24" key="CommitChangelistDialog2" timestamp="1584371975386">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584370669127" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1584370669127">
+    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584371975386" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1584525884293">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584370669127" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1584370669127">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1584525884293">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584370669127" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1584349419890">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1584525884292">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584349419890" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584525884292" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1584525884293">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1584371979014">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584371979014" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1584435064564">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584435064564" />
   </component>
 </project>

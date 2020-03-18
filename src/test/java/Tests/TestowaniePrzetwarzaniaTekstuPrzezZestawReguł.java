@@ -2,8 +2,10 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
+public class TestowaniePrzetwarzaniaTekstuPrzezZestawReguł extends TestBase {
 
 
 
@@ -20,10 +22,13 @@ public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.clickToKonfiguracjeArchiwalne();
-        page.loadToKonfiguracjeArchiwalne();
-        page.checkKonfiguracjeArchiwalne();
-
+        page.clickOnTabTestWyrazenRegularnych();
+        page.clickOnTabReguly();
+        page.sendtekstwejsciowy2();
+        page.sendpoleprotokolu2();
+        page.wyrazeniaregularne2();
+        page.sendzamiennik();
+        page.clickOnDodajButton();
 
     }
 }
