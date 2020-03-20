@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class PrzeglądanieIEdycjaWidokuDenormalizacji extends TestBase {
 
@@ -22,7 +23,34 @@ public class PrzeglądanieIEdycjaWidokuDenormalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Denormalizacja();
+        page.dodajGrupeDe();
+        page.selectTablicaDe();
+        page.dodajreguleDe();
+        page.selectTypeDe();
+        page.dodajOpisDe();
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+
+        alert.accept();
+
+        page.konfiguracjaSp();
+        page.Denormalizacja();
+        page.selectTablicaDe();
+
+        page.edytujGrupeDe();
+        page.edytujID();
+        page.edytujOpis();
+        page.saveEdycjaGrupy();
+        page.checkChangeEditGroup();
+        page.saveGrupe();
+        alert.accept();
 
 
+        page.konfiguracjaSp();
+        page.Denormalizacja();
+        page.selectTablicaDe();
+        page.usunGrupeDe();
+        page.saveGrupe();
+        alert.accept();
     }
 }

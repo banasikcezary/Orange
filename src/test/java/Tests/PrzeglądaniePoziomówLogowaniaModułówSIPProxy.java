@@ -23,5 +23,10 @@ public class PrzeglądaniePoziomówLogowaniaModułówSIPProxy extends TestBase {
         page.konfiguracjaSp();
 page.Logowanie();
 
+
+
+
+
+
     }
 }

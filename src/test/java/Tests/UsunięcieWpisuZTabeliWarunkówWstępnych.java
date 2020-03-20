@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class UsunięcieWpisuZTabeliWarunkówWstępnych extends TestBase {
 
@@ -22,6 +23,11 @@ public class UsunięcieWpisuZTabeliWarunkówWstępnych extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Preconditions();
+page.selectWarunek();
+page.usunWarunek();
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
 
+        alert.accept();
     }
 }

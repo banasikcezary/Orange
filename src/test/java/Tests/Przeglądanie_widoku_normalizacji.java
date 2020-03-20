@@ -22,7 +22,7 @@ public class Przeglądanie_widoku_normalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Normalizacja();
-
+        page.dropDownNormalizacja();
 
     }
 

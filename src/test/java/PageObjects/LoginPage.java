@@ -3,9 +3,11 @@ package PageObjects;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,7 +34,7 @@ public class LoginPage {
     private WebElement assertion;
 
 
-    @FindBy(xpath = "//*[@id=\"ngb-tab-0\"]")
+    @FindBy(id = "SP")
     private WebElement konfiguracjaSp;
 
     @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[3]/th/button")
@@ -119,9 +121,97 @@ public class LoginPage {
 
     @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[11]/button")
     private WebElement dodajbutton;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/button")
+    private WebElement rozwinwszystko;
 
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[1]/input")
+    private WebElement assercjawezla;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[4]/input")
+    private WebElement wagaedit;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[6]/label/select")
+    private WebElement selectSP;
+////////////////////////////
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[5]/button")
+    private WebElement dodajgrupe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/select")
+    private WebElement selectgrupa;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div[2]/select")
+    private WebElement routing2;
+    @FindBy(xpath = "//*[@id=\"main\"]/button")
+    private WebElement newregula;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr/td[1]/label/select")
+    private WebElement type;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr/td[6]/label/input")
+    private WebElement opis;
+    @FindBy(xpath = "//*[@id=\"save\"]")
+    private WebElement save2;
+
+    /////////////////
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[6]/button")
+    private WebElement edytujGrupe;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/label[1]/input")
+    private WebElement edytujID;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/label[2]/input")
+    private WebElement edytujOpis;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[3]/button[1]")
+    private WebElement saveEdycjaGrupy;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/img")
+    private WebElement checkChangeEditGroup;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[7]/button")
+    private WebElement deleteGroup;
+@FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr/td[5]/img[1]")
+private WebElement dodajWpis;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr[1]/td[5]/img[2]")
+    private WebElement usunWpis;
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[5]/button")
+    private WebElement dodajGrupeDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[3]/select")
+    private WebElement selectDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/button")
+    private WebElement dodajReguleDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr/td[1]/label/select")
+    private WebElement selectTypeDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr/td[6]/input")
+    private WebElement dodajOpisDe;
+//////////////////////////////////////////
+@FindBy(xpath = "//*[@id=\"main\"]/div/div[6]/button")
+private WebElement edytujGrupeDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[7]/button")
+    private WebElement usunGrupeDe;
+
+    ///////////////////////////////////////////////////////
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[5]/img[1]")
+    private WebElement dodajWpisDe;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[5]/img[2]")
+    private WebElement usunWpisDe;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[1]/label/select")
+    private WebElement selectTypeDe2;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[6]/input")
+    private WebElement dodajOpisDe2;
+    ////////////////////////////////////////////////////////////////////////
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/button")
+    private WebElement dodajWarunek;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]/td[3]/label/select")
+    private WebElement selectGrupaNormalizacji;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]/td[4]/label/select")
+    private WebElement selectMethod;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]")
+    private WebElement selectWarunek;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/button")
+    private WebElement usunWarunek;
+///////////////////////////////////////////////
+@FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/select")
+private WebElement globalnyPoziomLogowania;
 
     private WebDriver driver;
+
 
     public LoginPage(WebDriver driver) {
 
@@ -362,6 +452,215 @@ public class LoginPage {
         dodajbutton.click();
         logger.info("Konfiguracja Sp");
     }
+    @Step("Test wyrażeń regularnych")
+    public void clickOnRozwinWszystko() {
+        rozwinwszystko.click();
+        String wezel1 = assercjawezla.getAttribute("ng-reflect-model");
+        assertEquals(wezel1,"1_route_user@domena_route_rt_i");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void editWaga() {
+        wagaedit.clear();
+
+        wagaedit.sendKeys("5");
+        String waga = wagaedit.getAttribute("ng-reflect-model");
+        assertEquals(waga, "5");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selecttsp() {
+        Select normalizacjaDropDown = new Select(selectSP);
+        normalizacjaDropDown.selectByValue("gr_id_denorm_cc_2");
+        logger.info("Konfiguracja Sp");
+    }
+///////////////////////////////////////
+
+    @Step("Test wyrażeń regularnych")
+    public void clickDodajGrupe() {
+        dodajgrupe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectGrupa() {
 
 
+        Select dropDownGrupa = new Select(selectgrupa);
+        int selectOptions = dropDownGrupa.getOptions().size();
+        dropDownGrupa.selectByIndex(selectOptions - 1);
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dropDownRouting() {
+        Select dropDownRouting = new Select(routing2);
+        dropDownRouting.selectByValue("rt_id_cc_3");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajRegule() {
+        newregula.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectType() {
+        Select dropDownType = new Select(type);
+        dropDownType.selectByValue("TO_DISPLAY_NAME");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajopis() {
+        opis.sendKeys("testopisu");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void saveGrupe() {
+        save2.click();
+        logger.info("Konfiguracja Sp");
+        WebDriverWait wait = new WebDriverWait(driver, 300 /*timeout in seconds*/);
+        if(wait.until(ExpectedConditions.alertIsPresent())==null)
+            System.out.println("alert was not present");
+        else
+            System.out.println("alert was present");
+///////////////////////////
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujGrupe() {
+        edytujGrupe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujID() {
+        edytujID.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujOpis() {
+        edytujOpis.sendKeys("1234");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void saveEdycjaGrupy() {
+        saveEdycjaGrupy.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void checkChangeEditGroup() {
+        checkChangeEditGroup.click();
+        logger.info("Konfiguracja Sp");
+
+        String infoo = checkChangeEditGroup.getAttribute("ng-reflect-ngb-tooltip");
+        assertEquals(infoo, "1234");
+        System.out.println(infoo);
+    }
+    @Step("Test wyrażeń regularnych")
+    public void deleteGroup() {
+
+        deleteGroup.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void dodajWpis() {
+
+        dodajWpis.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void usunWpis() {
+
+        usunWpis.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajGrupeDe() {
+        dodajGrupeDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectTablicaDe() {
+        Select dropDownGrupa = new Select(selectDe);
+        int selectOptions = dropDownGrupa.getOptions().size();
+        dropDownGrupa.selectByIndex(selectOptions - 1);
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajreguleDe() {
+        dodajReguleDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectTypeDe() {
+        Select dropDownType = new Select(selectTypeDe);
+        dropDownType.selectByValue("TO_URI");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajOpisDe() {
+        dodajOpisDe.sendKeys("sadasda");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujGrupeDe() {
+        edytujGrupeDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunGrupeDe() {
+        usunGrupeDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajWpisDe() {
+        dodajWpisDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunWpisDee() {
+        usunWpisDe.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectTypeDe2() {
+        Select dropDownType = new Select(selectTypeDe2);
+        dropDownType.selectByValue("TO_DISPLAY_NAME");
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void dodajOpisDe2() {
+        dodajOpisDe2.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void DodajWarunek() {
+        dodajWarunek.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectGrupaNormalizacji() {
+        Select dropDownType = new Select(selectGrupaNormalizacji);
+        dropDownType.selectByValue("gr_id_norm_cc_2");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectMethod() {
+        Select dropDownType = new Select(selectMethod);
+        dropDownType.selectByValue("BYE");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectWarunek() {
+        selectWarunek.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunWarunek() {
+        usunWarunek.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void globalnyPoziomLogowania() {
+        Select dropDownType = new Select(globalnyPoziomLogowania);
+        dropDownType.selectByValue("INFO");
+        logger.info("Konfiguracja Sp");
+    }
 }

@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class DodanieWpisuDoTabeliDenormalizacji extends TestBase {
 
@@ -22,6 +23,17 @@ public class DodanieWpisuDoTabeliDenormalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Denormalizacja();
+
+        page.selectTablicaDe();
+
+        page.dodajWpisDe();
+        page.selectTypeDe2();
+        page.dodajOpisDe2();
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+
+        alert.accept();
+
 
 
     }

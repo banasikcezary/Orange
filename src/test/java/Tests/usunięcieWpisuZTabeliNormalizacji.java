@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class usunięcieWpisuZTabeliNormalizacji extends TestBase {
 
@@ -22,7 +23,12 @@ public class usunięcieWpisuZTabeliNormalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Normalizacja();
+        page.selectGrupa();
+        page.usunWpis();
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
 
+        alert.accept();
 
     }
 }

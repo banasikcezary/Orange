@@ -2,18 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieRaportówStatystyk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoWpisuDoTabeliWarunkówWstępnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoWpisuDoTabeliWarunkówWstępnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieWpisuDoTabeliDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieWpisuDoTabeliDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Dodanie_wpisu_do_tabeli_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Dodanie_wpisu_do_tabeli_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaPoziomówLogowaniaModułów.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaPoziomówLogowaniaModułów.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliRoutingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliRoutingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_i_edycja_widoku_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_i_edycja_widoku_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_SP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_SP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_widoku_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_widoku_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/usunięcieWpisuZTabeliNormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/usunięcieWpisuZTabeliNormalizacji.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DodanieWpisuDoTabeliDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/DodanieWpisuDoTabeliDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_wpisu_do_tabeli_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_wpisu_do_tabeli_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_i_edycja_widoku_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_i_edycja_widoku_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_SP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_SP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_widoku_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_widoku_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/usunięcieWpisuZTabeliNormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/usunięcieWpisuZTabeliNormalizacji.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Orange123" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,8 +59,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="TestNG.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin">
-    <configuration name="TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UsunięcieWpisuZTabeliWarunkówWstępnych.asUserShouldBeAbleToLoggin">
+    <configuration name="DodanieNowegoWpisuDoTabeliWarunkówWstępnych.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -47,24 +69,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Orange123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieNowegoWpisuDoTabeliWarunkówWstępnych" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -73,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DodanieWpisuDoTabeliDenormalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +87,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieWpisuDoTabeliDenormalizacji" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -91,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WczytanieKonfiguracjiArchiwalnejSIPProxy" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PrzeglądanieIEdycjaWidokuDenormalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -100,15 +105,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PrzeglądanieIEdycjaWidokuDenormalizacji" />
+      <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WczytanieKonfiguracjiArchiwalnejSIPProxy.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UsunięcieWpisuZTabeliDenormalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +123,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
+      <option name="MAIN_CLASS_NAME" value="Tests.UsunięcieWpisuZTabeliDenormalizacji" />
+      <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsunięcieWpisuZTabeliWarunkówWstępnych.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Orange123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.UsunięcieWpisuZTabeliWarunkówWstępnych" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -128,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestowaniePrzetwarzaniaTekstuPrzezZestawReguł.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego" />
-        <item itemvalue="TestNG.TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.WczytanieKonfiguracjiArchiwalnejSIPProxy" />
-        <item itemvalue="TestNG.WczytanieKonfiguracjiArchiwalnejSIPProxy.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.UsunięcieWpisuZTabeliWarunkówWstępnych.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieNowegoWpisuDoTabeliWarunkówWstępnych.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.UsunięcieWpisuZTabeliDenormalizacji.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieWpisuDoTabeliDenormalizacji.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.PrzeglądanieIEdycjaWidokuDenormalizacji.asUserShouldBeAbleToLoggin" />
       </list>
     </recent_temporary>
   </component>
@@ -147,40 +171,60 @@
       <option name="presentableId" value="Default" />
       <updated>1584007855085</updated>
     </task>
+    <task id="LOCAL-00001" summary="Środa">
+      <created>1584526188704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584526188704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Środa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Środa" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584443798775">
+    <state x="92" y="92" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584528648205">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1584443798775" />
-    <state x="454" y="24" key="CommitChangelistDialog2" timestamp="1584371975386">
+    <state x="92" y="92" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1584528648205" />
+    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584533031080">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584371975386" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1584525884293">
+    <state x="596" y="289" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1584533031080" />
+    <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584710553074">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1584525884293">
+    <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1584710553074" />
+    <state x="454" y="24" key="CommitChangelistDialog2" timestamp="1584526187754">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1584525884292">
+    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584526187754" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1584714918689">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584525884292" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1584525884293">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584714918689" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1584714918689">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584525884293" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1584371979014">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584714918689" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1584714918689">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584371979014" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1584435064564">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584714918689" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1584714918689">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584435064564" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584714918689" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1584526191854">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584526191854" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1584694379943">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584694379943" />
   </component>
 </project>

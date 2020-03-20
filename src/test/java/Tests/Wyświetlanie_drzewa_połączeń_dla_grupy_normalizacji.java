@@ -22,6 +22,7 @@ public class Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji extends Tes
         page.goSubmit();
         page.konfiguracjaSp();
         page.Normalizacja();
+        page.showTree();
 
 
     }

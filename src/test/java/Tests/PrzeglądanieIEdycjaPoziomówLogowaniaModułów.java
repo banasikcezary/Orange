@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class PrzeglądanieIEdycjaPoziomówLogowaniaModułów extends TestBase {
 
@@ -22,6 +23,11 @@ public class PrzeglądanieIEdycjaPoziomówLogowaniaModułów extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Logowanie();
+        page.globalnyPoziomLogowania();
 
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+
+        alert.accept();
     }
 }

@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class UsunięcieWpisuZTabeliDenormalizacji extends TestBase {
 
@@ -22,6 +23,13 @@ public class UsunięcieWpisuZTabeliDenormalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Denormalizacja();
+        page.selectTablicaDe();
+
+        page.usunWpisDee();
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+
+        alert.accept();
 
 
     }

@@ -22,6 +22,9 @@ public class PrzeglądanieIEdycjaTabeliRoutingu extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Routing();
+        page.clickOnRozwinWszystko();
+        page.editWaga();
+        page.selecttsp();
 
 
     }

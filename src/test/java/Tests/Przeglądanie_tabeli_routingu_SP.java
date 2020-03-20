@@ -22,6 +22,7 @@ public class Przeglądanie_tabeli_routingu_SP extends TestBase {
         page.goSubmit();
 page.konfiguracjaSp();
 page.Routing();
+page.clickOnRozwinWszystko();
 
 
     }

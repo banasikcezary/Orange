@@ -2,6 +2,7 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
+import org.openqa.selenium.Alert;
 
 public class Dodanie_wpisu_do_tabeli_normalizacji extends TestBase {
 
@@ -22,7 +23,15 @@ public class Dodanie_wpisu_do_tabeli_normalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Normalizacja();
+        page.selectGrupa();
+        page.dodajWpis();
 
+        page.selectType();
+        page.dodajopis();
 
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+
+        alert.accept();
     }
 }
