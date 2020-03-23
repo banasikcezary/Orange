@@ -210,6 +210,38 @@ private WebElement edytujGrupeDe;
 @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/select")
 private WebElement globalnyPoziomLogowania;
 
+////////////////////////// Routing
+@FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[1]/td[11]/img[1]")
+private WebElement dodajReguleRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[1]/input")
+    private WebElement dodajIdRoutingu;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[3]/input")
+    private WebElement dodajOpisRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[10]/input")
+    private WebElement dodajDpRoutingu;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[6]/select")
+    private WebElement selectGrDenormalizacjiRoutingu;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[1]/td[11]/img[2]")
+    private WebElement usunReguleRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[11]/img[1]")
+    private WebElement dodajWpisRoutingu;
+
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[3]/td[1]/input")
+    private WebElement idWpisuRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[3]/td[4]/input")
+    private WebElement wagaWpisuRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[2]/td[6]/label/select")
+    private WebElement selectGrDenormalizacjiWpisuRoutingu;
+    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[5]/button")
+    private WebElement buttonDodajServeruRoutingu;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[11]/img[2]")
+    private WebElement usunWpisRoutingu;
+
     private WebDriver driver;
 
 
@@ -663,4 +695,71 @@ private WebElement globalnyPoziomLogowania;
         dropDownType.selectByValue("INFO");
         logger.info("Konfiguracja Sp");
     }
+
+    ///////////Routing//////////////////////////////////
+    @Step("Test wyrażeń regularnych")
+    public void dodajReguleRoutingu() {
+        dodajReguleRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajIdRoutingu() {
+        dodajIdRoutingu.sendKeys("123");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajOpisRoutingu() {
+        dodajOpisRoutingu.sendKeys("qwerty");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajDpRoutingu() {
+        dodajDpRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectGrDenormalizacjiRoutingu() {
+        Select dropDownType = new Select(selectGrDenormalizacjiRoutingu);
+        dropDownType.selectByValue("gr_id_denorm_cc_3");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunReguleRoutingu() {
+        usunReguleRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajWpisRoutingu() {
+        dodajWpisRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void idWpisuRoutingu() {
+        idWpisuRoutingu.sendKeys("123");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void wagaWpisuRoutingu() {
+        wagaWpisuRoutingu.sendKeys("5");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void selectGrDenormalizacjiWpisuRoutingu() {
+        Select dropDownType = new Select(selectGrDenormalizacjiWpisuRoutingu);
+        dropDownType.selectByValue("gr_id_denorm_cc_3");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void buttonDodajServeruRoutingu() {
+       boolean displayed = buttonDodajServeruRoutingu.isDisplayed();
+assertTrue(displayed);
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunWpisRoutingu() {
+        usunWpisRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+
 }

@@ -22,6 +22,11 @@ public class Dodanie_nowego_połączenia_w_tabeli_routingu extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Routing();
+        page.clickOnRozwinWszystko();
+        page.dodajWpisRoutingu();
+        page.idWpisuRoutingu();
+        page.wagaWpisuRoutingu();
+        page.selectGrDenormalizacjiWpisuRoutingu();
 
 
     }

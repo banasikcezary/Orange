@@ -22,6 +22,8 @@ public class Usunięcie_połączenia_z_tabeli_routingu extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Routing();
+        page.clickOnRozwinWszystko();
+        page.usunWpisRoutingu();
 
 
     }

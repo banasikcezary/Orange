@@ -22,6 +22,11 @@ public class Usunięcie_reguły_z_tabeli_routingu extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Routing();
+        page.Routing();
+        for (int i = 0; i < 3; i++) {
+            page.usunReguleRoutingu();
+        }
+        page.buttonDodajServeruRoutingu();
 
 
     }
