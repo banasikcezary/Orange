@@ -7,11 +7,6 @@ import org.openqa.selenium.Alert;
 public class usunięcieWpisuZTabeliNormalizacji extends TestBase {
 
 
-
-
-
-
-
     @org.testng.annotations.Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 

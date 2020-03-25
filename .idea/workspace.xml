@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="">
+    <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="25.03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoPolaczeniaWTabeliRoutingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoPolaczeniaWTabeliRoutingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoWpisuDoTabeliWarunkowWstepnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowegoWpisuDoTabeliWarunkowWstepnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowejRegulyDoTabeliRoutingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieNowejRegulyDoTabeliRoutingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DodanieWpisuDoTabeliDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DodanieWpisuDoTabeliDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Dodanie_wpisu_do_tabeli_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Dodanie_wpisu_do_tabeli_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzegladanieEdycjaIZapisKonfiguracjiLoadBalancera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzegladanieEdycjaIZapisKonfiguracjiLoadBalancera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaPoziomówLogowaniaModułów.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaPoziomówLogowaniaModułów.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliRoutingu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliWarunkówWstępnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaTabeliWarunkówWstępnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieKonfiguracjiLoadBalancera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieKonfiguracjiLoadBalancera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieListyKonfiguracjiArchiwalnychSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieListyKonfiguracjiArchiwalnychSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieRaportówStatystyk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieRaportówStatystyk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieTabeliWarunkówWstępnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PrzeglądanieTabeliWarunkówWstępnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_i_edycja_widoku_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_i_edycja_widoku_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_SP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_tabeli_routingu_SP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_widoku_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Przeglądanie_widoku_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestLogowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestLogowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestowaniePrzetwarzaniaTekstuPrzezZestawRegul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestowaniePrzetwarzaniaTekstuPrzezZestawRegul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Usunięcie_połączenia_z_tabeli_routingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Usunięcie_połączenia_z_tabeli_routingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Usunięcie_reguły_z_tabeli_routingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Usunięcie_reguły_z_tabeli_routingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WczytanieKonfiguracjiArchiwalnejSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WyświetlanieDrzewaPołączeńDlaWarunkuWstępnego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WyświetlanieDrzewaPołączeńDlaWarunkuWstępnego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ZapisKonfiguracjiSIPProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ZapisKonfiguracjiSIPProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/przeglądanieWidokuDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/przeglądanieWidokuDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/usunięcieWpisuZTabeliNormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/usunięcieWpisuZTabeliNormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/wyświetlanieDrzewaPołączeńDlaGrupyDenormalizacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/wyświetlanieDrzewaPołączeńDlaGrupyDenormalizacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DodanieNowegoWpisuDoTabeliWarunkówWstępnych.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DodanieWpisuDoTabeliDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/DodanieWpisuDoTabeliDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_nowego_połączenia_w_tabeli_routingu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_nowej_reguły_do_tabeli_routingu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_wpisu_do_tabeli_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Dodanie_wpisu_do_tabeli_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaTabeliWarunkówWstępnych.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaTabeliWarunkówWstępnych.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieIEdycjaWidokuDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądaniePoziomówLogowaniaModułówSIPProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieTabeliWarunkówWstępnych.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/PrzeglądanieTabeliWarunkówWstępnych.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_i_edycja_widoku_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_i_edycja_widoku_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_DP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_SP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_tabeli_routingu_SP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_widoku_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Przeglądanie_widoku_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TestLogowanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TestLogowanie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/UsunięcieWpisuZTabeliWarunkówWstępnych.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Usunięcie_połączenia_z_tabeli_routingu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Usunięcie_połączenia_z_tabeli_routingu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Usunięcie_reguły_z_tabeli_routingu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Usunięcie_reguły_z_tabeli_routingu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/WyświetlanieDrzewaPołączeńDlaWarunkuWstępnego.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/WyświetlanieDrzewaPołączeńDlaWarunkuWstępnego.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/przeglądanieWidokuDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/przeglądanieWidokuDenormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/usunięcieWpisuZTabeliNormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/usunięcieWpisuZTabeliNormalizacji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/wyświetlanieDrzewaPołączeńDlaGrupyDenormalizacji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/wyświetlanieDrzewaPołączeńDlaGrupyDenormalizacji.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +98,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="TestNG.Profile.asUserShouldBeAbleToLoggin">
-    <configuration name="Profile.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DodanieWpisuDoTabeliDenormalizacji.asUserShouldBeAbleToLoggin">
+    <configuration name="DodanieNowegoPolaczeniaWTabeliRoutingu.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -46,7 +108,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Profile" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieNowegoPolaczeniaWTabeliRoutingu" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -55,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Przeglądanie_i_edycja_widoku_normalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DodanieNowegoWpisuDoTabeliWarunkowWstepnych.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +126,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_i_edycja_widoku_normalizacji" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieNowegoWpisuDoTabeliWarunkowWstepnych" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -73,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Przeglądanie_tabeli_routingu_DP.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DodanieNowejRegulyDoTabeliRoutingu.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +144,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_tabeli_routingu_DP" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieNowejRegulyDoTabeliRoutingu" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -91,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Przeglądanie_tabeli_routingu_SP.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DodanieWpisuDoTabeliDenormalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -100,7 +162,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_tabeli_routingu_SP" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DodanieWpisuDoTabeliDenormalizacji" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -109,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Przeglądanie_widoku_normalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Dodanie_wpisu_do_tabeli_normalizacji.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +180,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Przeglądanie_widoku_normalizacji" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Dodanie_wpisu_do_tabeli_normalizacji" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -129,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Profile.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_widoku_normalizacji.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_tabeli_routingu_SP.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_tabeli_routingu_DP.asUserShouldBeAbleToLoggin" />
-        <item itemvalue="TestNG.Przeglądanie_i_edycja_widoku_normalizacji.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieWpisuDoTabeliDenormalizacji.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieNowejRegulyDoTabeliRoutingu.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieNowegoPolaczeniaWTabeliRoutingu.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.DodanieNowegoWpisuDoTabeliWarunkowWstepnych.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.Dodanie_wpisu_do_tabeli_normalizacji.asUserShouldBeAbleToLoggin" />
       </list>
     </recent_temporary>
   </component>
@@ -176,8 +238,51 @@
       <option name="project" value="LOCAL" />
       <updated>1585136437168</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="25.03">
+      <created>1585137085898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585137085898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/User/IdeaProjects/Orange123/src/test/java/Tests" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Środa" />
@@ -197,36 +302,68 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1584710553074" />
-    <state x="-1375" y="-49" key="CommitChangelistDialog2" timestamp="1585136436254">
+    <state x="-1890" y="-77" width="1886" height="1039" key="CommitChangelistDialog2" timestamp="1585137361965">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
-    <state x="-1375" y="-49" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585136436254" />
+    <state x="-1890" y="-77" width="1886" height="1039" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137361965" />
     <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584977286569" />
-    <state width="1877" height="108" key="GridCell.Tab.0.bottom" timestamp="1585130845700">
+    <state x="-1828" y="14" width="1736" height="856" key="DiffContextDialog" timestamp="1585137939460">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
-    <state width="1877" height="108" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585130845700" />
+    <state x="-1828" y="14" width="1736" height="856" key="DiffContextDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137939460" />
+    <state x="-1180" y="197" key="FileChooserDialogImpl" timestamp="1585137222576">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="197" key="FileChooserDialogImpl/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137222576" />
+    <state width="1557" height="250" key="GridCell.Tab.0.bottom" timestamp="1585148518229">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144862275" />
+    <state width="1557" height="250" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585148518229" />
     <state width="1557" height="296" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585126137023" />
-    <state width="1877" height="108" key="GridCell.Tab.0.center" timestamp="1585130845700">
-      <screen x="-1920" y="-78" width="1920" height="1040" />
+    <state width="1557" height="250" key="GridCell.Tab.0.center" timestamp="1585148518229">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1877" height="108" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585130845700" />
+    <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144862275" />
+    <state width="1557" height="250" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585148518229" />
     <state width="1557" height="296" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585126137022" />
-    <state width="1877" height="108" key="GridCell.Tab.0.left" timestamp="1585130845700">
-      <screen x="-1920" y="-78" width="1920" height="1040" />
+    <state width="1557" height="250" key="GridCell.Tab.0.left" timestamp="1585148518229">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1877" height="108" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585130845700" />
+    <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144862274" />
+    <state width="1557" height="250" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585148518229" />
     <state width="1557" height="296" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585126137021" />
-    <state width="1877" height="108" key="GridCell.Tab.0.right" timestamp="1585130845700">
-      <screen x="-1920" y="-78" width="1920" height="1040" />
+    <state width="1557" height="250" key="GridCell.Tab.0.right" timestamp="1585148518229">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1877" height="108" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585130845700" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144862275" />
+    <state width="1557" height="250" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585148518229" />
     <state width="1557" height="296" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585126137022" />
-    <state x="-1450" y="119" key="Vcs.Push.Dialog.v2" timestamp="1585136444539">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585144232160">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
-    <state x="-1450" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585136444539" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144232160" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585144232160">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144232160" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585144232160">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144232160" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585144232160">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585144232160" />
+    <state x="-1450" y="119" key="Vcs.Push.Dialog.v2" timestamp="1585137094551">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state x="-1450" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137094551" />
     <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584977290181" />
+    <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog" timestamp="1585137160782">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137160782" />
     <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1584694379943">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -235,14 +372,18 @@
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
     <state x="-1230" y="197" key="extract.method.dialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585136727470" />
+    <state x="-1264" y="40" width="607" height="804" key="find.popup" timestamp="1585138172213">
+      <screen x="-1920" y="-78" width="1920" height="1040" />
+    </state>
+    <state x="-1264" y="40" width="607" height="804" key="find.popup/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585138172213" />
     <state x="456" y="195" key="run.anything.popup" timestamp="1585054821725">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1585054821725" />
-    <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup" timestamp="1585136724345">
+    <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup" timestamp="1585138056687">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
-    <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585136724345" />
+    <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585138056687" />
     <state x="163" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1584962167929" />
   </component>
 </project>

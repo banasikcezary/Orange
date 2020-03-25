@@ -4,10 +4,7 @@ import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
 
-
 public class TestLogowanie extends TestBase {
-
-
 
 
     @org.testng.annotations.Test
@@ -19,8 +16,7 @@ public class TestLogowanie extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-page.assertion();
-
+        page.assertion();
 
 
     }

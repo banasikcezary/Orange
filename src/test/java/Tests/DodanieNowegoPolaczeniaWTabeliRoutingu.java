@@ -32,7 +32,7 @@ public class DodanieNowegoPolaczeniaWTabeliRoutingu extends TestBase {
         page.konfiguracjaSp();
         page.Routing();
         page.clickOnRozwinWszystko();
-        page.asercjaDodanieNowegoPolaczenia();
+      page.asercjaDodanieNowegoPolaczenia();
     }
 
 }

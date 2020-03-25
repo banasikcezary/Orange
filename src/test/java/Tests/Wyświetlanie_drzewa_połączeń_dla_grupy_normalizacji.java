@@ -6,11 +6,6 @@ import io.qameta.allure.Description;
 public class Wyświetlanie_drzewa_połączeń_dla_grupy_normalizacji extends TestBase {
 
 
-
-
-
-
-
     @org.testng.annotations.Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 

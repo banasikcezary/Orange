@@ -2,15 +2,8 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class TestowaniePrzetwarzaniaTekstuPrzezZestawRegul extends TestBase {
-
-
-
-
-
 
 
     @org.testng.annotations.Test
@@ -24,7 +17,7 @@ public class TestowaniePrzetwarzaniaTekstuPrzezZestawRegul extends TestBase {
         page.goSubmit();
         page.clickOnTabTestWyrazenRegularnych();
         page.clickOnTabReguly();
-        page.sendtekstwejsciowy2();
+        page.sendTekstWejsciowy();
         page.sendpoleprotokolu2();
         page.wyrazeniaregularne2();
         page.sendzamiennik();

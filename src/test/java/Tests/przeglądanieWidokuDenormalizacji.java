@@ -1,15 +1,9 @@
 package Tests;
 
 import PageObjects.LoginPage;
-import Tests.TestBase;
 import io.qameta.allure.Description;
 
 public class przeglądanieWidokuDenormalizacji extends TestBase {
-
-
-
-
-
 
 
     @org.testng.annotations.Test

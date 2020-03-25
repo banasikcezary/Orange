@@ -2,7 +2,6 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-import org.openqa.selenium.Alert;
 
 public class Profile extends TestBase {
 

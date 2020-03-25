@@ -2,23 +2,9 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
-import org.openqa.selenium.WebElement;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static org.testng.Assert.assertEquals;
 
 public class Przeglądanie_i_edycja_widoku_normalizacji extends TestBase {
-
-
-
-
-
 
 
     @org.testng.annotations.Test
@@ -45,11 +31,11 @@ public class Przeglądanie_i_edycja_widoku_normalizacji extends TestBase {
         page.konfiguracjaSp();
         page.Normalizacja();
         page.selectGrupa();
-page.edytujGrupe();
-page.edytujID();
-page.edytujOpis();
-page.saveEdycjaGrupy();
-page.checkChangeEditGroup();
+        page.edytujGrupe();
+        page.edytujID();
+        page.edytujOpis();
+        page.saveEdycjaGrupy();
+        page.checkChangeEditGroup();
         page.saveGrupe();
         alert.accept();
 
@@ -59,15 +45,6 @@ page.checkChangeEditGroup();
         page.deleteGroup();
         page.saveGrupe();
         alert.accept();
-
-
-
-
-
-
-
-
-
 
 
     }

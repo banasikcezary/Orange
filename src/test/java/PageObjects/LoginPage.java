@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+
 public class LoginPage {
 
     Logger logger = LogManager.getRootLogger();
@@ -34,34 +35,34 @@ public class LoginPage {
     @FindBy(id = "SP")
     private WebElement konfiguracjaSp;
 
-    @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[3]/th/button")
+    @FindBy(id = "routing_button")
     private WebElement routing;
-    @FindBy(xpath = "//*[@id=\"ngb-tab-2\"]/a")
+    @FindBy(id = "DP")
     private WebElement konfiguracjaDp;
 
-    @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[2]/th/button")
+    @FindBy(id = "normalizacja_button")
     private WebElement normalizacja;
 
-    @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[4]/th/button")
+    @FindBy(id = "denormalizacja_button")
     private WebElement denormalizacja;
 
-    @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[1]/th/button")
+    @FindBy(id = "precondition_button")
     private WebElement precondition;
 
-    @FindBy(xpath = "//*[@id=\"menu\"]/table/tbody/tr[5]/th/button")
+    @FindBy(id = "logowanie_button")
     private WebElement logowanie;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/select")
+    @FindBy(id = "group_normalization_select")
     private WebElement tablicaNormalizacj;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[4]/img")
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-normalization/div/div[1]/div[4]/img")
     private WebElement tree;
     @FindBy(id = "save")
     private WebElement save;
 
     @FindBy(id = "LB")
     private WebElement lB;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/p")
+    @FindBy(id = "message")
     private WebElement stanKonfiguracji;
 
     @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr/td[1]/input")
@@ -76,9 +77,9 @@ public class LoginPage {
     private WebElement saveLoadBalancer;
     @FindBy(id = "ARCH")
     private WebElement konfiguracjeArchiwalne;
-    @FindBy(xpath = "//*[@id=\"SP-panel\"]/div/div[2]/div/table/tbody[1]/tr/td[4]/button")
+    @FindBy(id = "sp_load_0")
     private WebElement loadKonfiguracjeArchiwalne;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[1]/p")
+    @FindBy(id = "message")
     private WebElement checkKonfiguracjaSp;
 
     @FindBy(id = "STATS")
@@ -90,38 +91,37 @@ public class LoginPage {
     @FindBy(id = "FIT")
     private WebElement tabDopasowanie;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div[2]/input")
+    @FindBy(id = "input")
     private WebElement tekstwejsciowy;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div[4]/input")
+    @FindBy(id = "regex")
     private WebElement wyrazenieregularne;
 
     @FindBy(id = "result")
     private WebElement buttonwynikdopasowania;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[4]/div[2]/input")
+    @FindBy(id = "result_text")
     private WebElement wynikdopasowania;
 
     @FindBy(id = "REG")
     private WebElement reguly;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[4]/input")
-    private WebElement tekstwejsciowy2;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[6]/input")
+
+    @FindBy(id = "protocol")
     private WebElement poleprotokolu2;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[8]/input")
+    @FindBy(id = "regex_0")
     private WebElement wyrazenieregularne2;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[10]/input")
+    @FindBy(id = "replacement_0")
     private WebElement zamiennik;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[11]/button")
+    @FindBy(id = "add_regule")
     private WebElement dodajbutton;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-routing/div/div[1]/div[3]/button")
+    @FindBy(id = "expand_all_button")
     private WebElement rozwinwszystko;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[1]/input")
+    @FindBy(id = "destination_0_1")
     private WebElement assercjawezla;
 
     @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[4]/input")
@@ -130,139 +130,144 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[6]/label/select")
     private WebElement selectSP;
     ////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[5]/button")
+    @FindBy(xpath = "add_group")
     private WebElement dodajgrupe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/select")
+    @FindBy(id = "group_normalization_select")
     private WebElement selectgrupa;
     @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div[2]/select")
     private WebElement routing2;
     @FindBy(xpath = "//*[@id=\"main\"]/button")
     private WebElement newregula;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr[2]/td[1]/label/select")
+    @FindBy(id = "normalization_type_1")
     private WebElement type;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr[2]/td[6]/label/input")
+    @FindBy(id = "description_1")
     private WebElement opis;
-    @FindBy(xpath = "//*[@id=\"save\"]")
+    @FindBy(id = "save")
     private WebElement save2;
 
+    @FindBy(xpath="//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-normalization/div/div[3]/div/table/tbody/tr[2]/td[4]")
+    private WebElement output;
+    @FindBy(id = "output_edited")
+    private WebElement outputText;
+    @FindBy(id = "output_save_button")
+    private WebElement outputSave;
+
+
     /////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[6]/button")
+    @FindBy(id = "edit_group")
     private WebElement edytujGrupe;
-    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/label[1]/input")
+    @FindBy(id = "edit_group_id")
     private WebElement edytujID;
-    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/label[2]/input")
+    @FindBy(id = "edit_group_desc")
     private WebElement edytujOpis;
-    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[3]/button[1]")
+    @FindBy(id = "edit_save_button")
     private WebElement saveEdycjaGrupy;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/img")
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-denormalization/div/div/div[2]/img")
     private WebElement checkChangeEditGroup;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[7]/button")
+    @FindBy(id = "delete_group")
     private WebElement deleteGroup;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr/td[5]/img[1]")
+    @FindBy(id = "add_regule_0")
     private WebElement dodajWpis;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[3]/div/table/tbody/tr[1]/td[5]/img[2]")
+    @FindBy(id = "delete_regule_0")
     private WebElement usunWpis;
     ////////////////////////////////////////////////////////////////////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[5]/button")
-    private WebElement dodajGrupeDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[3]/select")
+
+    @FindBy(id = "chooseDenorm")
     private WebElement selectDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/button")
+    @FindBy(id = "add_regule")
     private WebElement dodajReguleDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr/td[1]/label/select")
+    @FindBy(id = "type_0")
     private WebElement selectTypeDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr/td[6]/input")
+    @FindBy(id = "description_0")
     private WebElement dodajOpisDe;
     //////////////////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[6]/button")
+    @FindBy(id = "edit_group")
     private WebElement edytujGrupeDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[7]/button")
-    private WebElement usunGrupeDe;
+
 
     ///////////////////////////////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[5]/img[1]")
-    private WebElement dodajWpisDe;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[5]/img[2]")
+
+    @FindBy(id = "delete_regule_0")
     private WebElement usunWpisDe;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[1]/label/select")
+    @FindBy(id = "type_1")
     private WebElement selectTypeDe2;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/div[8]/table/tbody/tr[1]/td[6]/input")
+    @FindBy(id = "description_1")
     private WebElement dodajOpisDe2;
     ////////////////////////////////////////////////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/button")
+    @FindBy(id = "add_precondition_button")
     private WebElement dodajWarunek;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]/td[3]/label/select")
+    @FindBy(id = "precondition_group_normalization_id_1")
     private WebElement selectGrupaNormalizacji;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]/td[4]/label/select")
+    @FindBy(id = "precondition_method_1")
     private WebElement selectMethod;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[2]")
+    @FindBy(id = "precondition_row_0")
     private WebElement selectWarunek;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[3]/button")
+    @FindBy(id = "delete_precondition_button")
     private WebElement usunWarunek;
     ///////////////////////////////////////////////
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[2]/select")
+    @FindBy(id = "select_global_level")
     private WebElement globalnyPoziomLogowania;
 
     ////////////////////////// Routing
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[1]/td[11]/img[1]")
+    @FindBy(id = "add_server_0")
     private WebElement dodajReguleRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[1]/input")
+    @FindBy(id = "routing_id_1")
     private WebElement dodajIdRoutingu;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[3]/input")
+    @FindBy(id = "routing_description_1")
     private WebElement dodajOpisRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[10]/input")
+    @FindBy(id = "locate_route_checkbox_1")
     private WebElement dodajDpRoutingu;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[1]/td[6]/select")
+    @FindBy(id = "group_denormalization_1")
     private WebElement selectGrDenormalizacjiRoutingu;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody/tr[1]/td[11]/img[2]")
+    @FindBy(id = "delete_server_0")
     private WebElement usunReguleRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[11]/img[1]")
+    @FindBy(id = "add_file_1_0")
     private WebElement dodajWpisRoutingu;
 
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[3]/td[1]/input")
+    @FindBy(id = "destination_1_1")
     private WebElement idWpisuRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[3]/td[4]/input")
+    @FindBy(id = "weight_1_1")
     private WebElement wagaWpisuRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[2]/tr[2]/td[6]/label/select")
+    @FindBy(id = "denormalization_1_1")
     private WebElement selectGrDenormalizacjiWpisuRoutingu;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[1]/div[5]/button")
+    @FindBy(id = "add_server_button")
     private WebElement buttonDodajServeruRoutingu;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[11]/img[2]")
+    @FindBy(id = "delete_file_0_0")
     private WebElement usunWpisRoutingu;
     /////////////////////////////////////////////Profile/////////////////////////////////////////
     @FindBy(id = "PROFILES")
     private WebElement profiles;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[4]/button")
+    @FindBy(id = "add_profile")
     private WebElement dodajProfil;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[13]/td[1]/input")
+    @FindBy(id = "id_2")
     private WebElement idProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[13]/td[2]/input")
+    @FindBy(id = "name_2")
     private WebElement opisProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[5]/button")
+    @FindBy(id = "add_service")
     private WebElement dodajUslugeProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[6]/button")
+    @FindBy(id = "add_address")
     private WebElement dodajAdresProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[7]/button")
+    @FindBy(id = "delete")
     private WebElement usunProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[14]/td[3]/input")
+    @FindBy(id = "service_2_0")
     private WebElement dodajNazwaUslugiProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[15]/td[4]/input")
+    @FindBy(id = "address_2_0")
     private WebElement dodajNazwaAdresuProfil;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[15]/td[5]/input")
+    @FindBy(xpath = "//*[@id=\"address_2_0\"][@type='number']")
     private WebElement dodajWageAdresuProfil;
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[10]/button")
+    @FindBy(id = "save")
     private WebElement zapiszProfil;
 
     //////////////////////////////DDDDDDDDDDDDPPPPPPPPPPP
@@ -496,12 +501,7 @@ public class LoginPage {
 
     }
 
-    @Step("Test wyrażeń regularnych")
-    public void sendtekstwejsciowy2() {
-        tekstwejsciowy2.sendKeys("");
-        logger.info("Konfiguracja Sp");
 
-    }
 
     @Step("Test wyrażeń regularnych")
     public void sendpoleprotokolu2() {
@@ -530,8 +530,7 @@ public class LoginPage {
     @Step("Test wyrażeń regularnych")
     public void clickOnRozwinWszystko() {
         rozwinwszystko.click();
-        String wezel1 = assercjawezla.getAttribute("ng-reflect-model");
-        assertEquals(wezel1, "1_route_user@domena_route_rt_i");
+
         logger.info("Konfiguracja Sp");
     }
 
@@ -607,6 +606,14 @@ public class LoginPage {
     }
 
     @Step("Test wyrażeń regularnych")
+    public void dodajOutput() {
+        output.click();
+        outputText.sendKeys("testOutputu");
+        outputSave.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
     public void edytujGrupe() {
         edytujGrupe.click();
         logger.info("Konfiguracja Sp");
@@ -661,11 +668,7 @@ public class LoginPage {
         logger.info("Konfiguracja Sp");
     }
 
-    @Step("Test wyrażeń regularnych")
-    public void dodajGrupeDe() {
-        dodajGrupeDe.click();
-        logger.info("Konfiguracja Sp");
-    }
+
 
     @Step("Test wyrażeń regularnych")
     public void selectTablicaDe() {
@@ -699,17 +702,9 @@ public class LoginPage {
         logger.info("Konfiguracja Sp");
     }
 
-    @Step("Test wyrażeń regularnych")
-    public void usunGrupeDe() {
-        usunGrupeDe.click();
-        logger.info("Konfiguracja Sp");
-    }
 
-    @Step("Test wyrażeń regularnych")
-    public void dodajWpisDe() {
-        dodajWpisDe.click();
-        logger.info("Konfiguracja Sp");
-    }
+
+
 
     @Step("Test wyrażeń regularnych")
     public void usunWpisDee() {
@@ -726,7 +721,7 @@ public class LoginPage {
 
     @Step("Test wyrażeń regularnych")
     public void dodajOpisDe2() {
-        dodajOpisDe2.click();
+        dodajOpisDe2.sendKeys("qwerty");
         logger.info("Konfiguracja Sp");
     }
 
@@ -815,7 +810,7 @@ public class LoginPage {
 
     @Step("Test wyrażeń regularnych")
     public void idWpisuRoutingu() {
-        idWpisuRoutingu.sendKeys("123");
+        idWpisuRoutingu.sendKeys("123_route_user@domena_route_rt_i");
         logger.info("Konfiguracja Sp");
     }
 
@@ -849,7 +844,7 @@ public class LoginPage {
     @Step("Test wyrażeń regularnych")
     public void asercjaDodanieNowegoPolaczenia() {
         String wpis = idWpisuRoutingu.getAttribute("ng-reflect-model");
-        assertEquals(wpis, "123");
+        assertEquals(wpis, "123_route_user@domena_route_rt");
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////

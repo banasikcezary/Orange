@@ -18,7 +18,10 @@ public class DodanieNowejRegulyDoTabeliRoutingu extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Routing();
+        page.clickOnRozwinWszystko();
         page.dodajReguleRoutingu();
+        page.dodajWpisRoutingu();
+
         page.dodajIdRoutingu();
 
 
@@ -27,10 +30,19 @@ public class DodanieNowejRegulyDoTabeliRoutingu extends TestBase {
         page.selectGrDenormalizacjiRoutingu();
         page.selectGrDenormalizacjiWpisuRoutingu();
 
-       // for (int i = 0; i < 4; i++) {
+
+        try
+        {
+            Thread.sleep(200000);
+        }
+        catch(InterruptedException e)
+        {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+        }
+        // for (int i = 0; i < 4; i++) {
         // page.usunReguleRoutingu();
-       // }
-      //  page.buttonDodajServeruRoutingu();
+        // }
+        //  page.buttonDodajServeruRoutingu();
         page.saveGrupe();
         Alert alert = driver.switchTo().alert();
         String info = alert.getText();

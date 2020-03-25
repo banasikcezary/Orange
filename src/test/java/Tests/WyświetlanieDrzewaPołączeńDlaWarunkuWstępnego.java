@@ -6,12 +6,7 @@ import io.qameta.allure.Description;
 public class WyświetlanieDrzewaPołączeńDlaWarunkuWstępnego extends TestBase {
 
 
-
-
-
-
-
-        @org.testng.annotations.Test
+    @org.testng.annotations.Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 
     public void asUserShouldBeAbleToLoggin() {

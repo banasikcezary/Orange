@@ -2,16 +2,8 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
-
-import static org.testng.Assert.assertEquals;
 
 public class TestowanieDopasowaniaTekstuDoWyrażeniaRegularnego extends TestBase {
-
-
-
-
-
 
 
     @org.testng.annotations.Test

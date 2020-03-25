@@ -7,11 +7,6 @@ import org.openqa.selenium.Alert;
 public class PrzeglądanieIEdycjaWidokuDenormalizacji extends TestBase {
 
 
-
-
-
-
-
     @org.testng.annotations.Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 
@@ -23,7 +18,7 @@ public class PrzeglądanieIEdycjaWidokuDenormalizacji extends TestBase {
         page.goSubmit();
         page.konfiguracjaSp();
         page.Denormalizacja();
-        page.dodajGrupeDe();
+        page.clickDodajGrupe();
         page.selectTablicaDe();
         page.dodajreguleDe();
         page.selectTypeDe();
@@ -49,7 +44,7 @@ public class PrzeglądanieIEdycjaWidokuDenormalizacji extends TestBase {
         page.konfiguracjaSp();
         page.Denormalizacja();
         page.selectTablicaDe();
-        page.usunGrupeDe();
+        page.deleteGroup();
         page.saveGrupe();
         alert.accept();
     }

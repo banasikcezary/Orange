@@ -7,11 +7,6 @@ import org.openqa.selenium.Alert;
 public class DodanieWpisuDoTabeliDenormalizacji extends TestBase {
 
 
-
-
-
-
-
     @org.testng.annotations.Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 
@@ -26,14 +21,19 @@ public class DodanieWpisuDoTabeliDenormalizacji extends TestBase {
 
         page.selectTablicaDe();
 
-        page.dodajWpisDe();
-        page.selectTypeDe2();
-        page.dodajOpisDe2();
-        page.saveGrupe();
+        page.dodajWpis();
+
+
+
+
+
+
+       page.selectTypeDe2();
+     page.dodajOpisDe2();
+      page.saveGrupe();
         Alert alert = driver.switchTo().alert();
 
         alert.accept();
-
 
 
     }
