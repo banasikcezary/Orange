@@ -4,7 +4,7 @@ import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 
-public class Dodanie_wpisu_do_tabeli_normalizacji extends TestBase {
+public class DodanieNowegoWpisuDoTabeliWarunkowWstepnych extends TestBase {
 
 
 
@@ -22,12 +22,10 @@ public class Dodanie_wpisu_do_tabeli_normalizacji extends TestBase {
         page.sendPassword();
         page.goSubmit();
         page.konfiguracjaSp();
-        page.Normalizacja();
-        page.selectGrupa();
-        page.dodajWpis();
-
-        page.selectType();
-        page.dodajopis();
+        page.Preconditions();
+        page.DodajWarunek();
+        page.selectGrupaNormalizacji();
+        page.selectMethod();
 
         page.saveGrupe();
         Alert alert = driver.switchTo().alert();
@@ -35,5 +33,6 @@ public class Dodanie_wpisu_do_tabeli_normalizacji extends TestBase {
         System.out.println(info);
 
         alert.accept();
+
     }
 }

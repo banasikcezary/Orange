@@ -4,7 +4,7 @@ import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 
-public class Dodanie_nowej_reguły_do_tabeli_routingu extends TestBase {
+public class DodanieNowejRegulyDoTabeliRoutingu extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -20,6 +20,8 @@ public class Dodanie_nowej_reguły_do_tabeli_routingu extends TestBase {
         page.Routing();
         page.dodajReguleRoutingu();
         page.dodajIdRoutingu();
+
+
         page.dodajOpisRoutingu();
         page.dodajDpRoutingu();
         page.selectGrDenormalizacjiRoutingu();
@@ -31,7 +33,8 @@ public class Dodanie_nowej_reguły_do_tabeli_routingu extends TestBase {
       //  page.buttonDodajServeruRoutingu();
         page.saveGrupe();
         Alert alert = driver.switchTo().alert();
-
+        String info = alert.getText();
+        System.out.println(info);
         alert.accept();
 
     }

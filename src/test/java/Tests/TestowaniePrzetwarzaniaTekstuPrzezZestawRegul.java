@@ -5,7 +5,7 @@ import io.qameta.allure.Description;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class TestowaniePrzetwarzaniaTekstuPrzezZestawReguł extends TestBase {
+public class TestowaniePrzetwarzaniaTekstuPrzezZestawRegul extends TestBase {
 
 
 
@@ -29,6 +29,6 @@ public class TestowaniePrzetwarzaniaTekstuPrzezZestawReguł extends TestBase {
         page.wyrazeniaregularne2();
         page.sendzamiennik();
         page.clickOnDodajButton();
-
+//////////////////////////////////////////////////
     }
 }

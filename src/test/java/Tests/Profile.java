@@ -4,12 +4,7 @@ import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 
-public class DodanieNowegoWpisuDoTabeliWarunkówWstępnych extends TestBase {
-
-
-
-
-
+public class Profile extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -21,16 +16,18 @@ public class DodanieNowegoWpisuDoTabeliWarunkówWstępnych extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Preconditions();
-        page.DodajWarunek();
-        page.selectGrupaNormalizacji();
-        page.selectMethod();
 
-        page.saveGrupe();
-        Alert alert = driver.switchTo().alert();
-
-        alert.accept();
+        page.goToProfil();
+        page.dodajProfil();
+        page.dodajIdProfil();
+        page.dodajOpisProfil();
+        page.dodajUslugeProfil();
+        page.dodajAdresProfil();
+        page.usunProfil();
+        page.dodajNazwaUslugiProfil();
+        page.dodajNazwaAdresuProfil();
+        page.dodajWageAdresuProfil();
+        page.zapiszProfil();
 
     }
 }

@@ -2,13 +2,10 @@ package Tests;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-
-public class Dodanie_nowego_połączenia_w_tabeli_routingu extends TestBase {
-
+import org.openqa.selenium.Alert;
 
 
-
-
+public class DodanieNowegoPolaczeniaWTabeliRoutingu extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -27,8 +24,15 @@ public class Dodanie_nowego_połączenia_w_tabeli_routingu extends TestBase {
         page.idWpisuRoutingu();
         page.wagaWpisuRoutingu();
         page.selectGrDenormalizacjiWpisuRoutingu();
-
-
+        page.saveGrupe();
+        Alert alert = driver.switchTo().alert();
+        String info = alert.getText();
+        System.out.println(info);
+        alert.accept();
+        page.konfiguracjaSp();
+        page.Routing();
+        page.clickOnRozwinWszystko();
+        page.asercjaDodanieNowegoPolaczenia();
     }
 
 }

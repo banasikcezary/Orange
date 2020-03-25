@@ -3,7 +3,7 @@ package Tests;
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera extends TestBase {
+public class PrzegladanieEdycjaIZapisKonfiguracjiLoadBalancera extends TestBase {
 
 
 
@@ -22,9 +22,9 @@ public class PrzeglądanieEdycjaIZapisKonfiguracjiLoadBalancera extends TestBase
         page.goSubmit();
         page.tabLB();
         page.stanZaladowanejKonfiguracji();
-        page.zmieńAdresMaszynySip();
-        page.zmieńWageMaszynySip();
-        page.zmieńPoziomLogowaniaModułu();
+        page.zmienAdresMaszynySip();
+        page.zmienWageMaszynySip();
+        page.zmienPoziomLogowaniaModulu();
         page.zapisanieLoadBalancera();
 
     }

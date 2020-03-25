@@ -23,7 +23,7 @@ public class WczytanieKonfiguracjiArchiwalnejSIPProxy extends TestBase {
         page.clickToKonfiguracjeArchiwalne();
         page.loadToKonfiguracjeArchiwalne();
         page.checkKonfiguracjeArchiwalne();
-
+////////////////////////////////////////
 
     }
 }
