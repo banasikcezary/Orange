@@ -1,9 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class Przeglądanie_tabeli_routingu_SP extends TestBase {
+public class Profile extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,11 +15,18 @@ public class Przeglądanie_tabeli_routingu_SP extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Routing();
-        page.clickOnRozwinWszystko();
 
+        page.goToProfil();
+        page.dodajProfil();
+        page.dodajIdProfil();
+        page.dodajOpisProfil();
+        page.dodajUslugeProfil();
+        page.dodajAdresProfil();
+        page.usunProfil();
+        page.dodajNazwaUslugiProfil();
+        page.dodajNazwaAdresuProfil();
+        page.dodajWageAdresuProfil();
+        page.zapiszProfil();
 
     }
-
 }

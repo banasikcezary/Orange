@@ -1,9 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class Usunięcie_połączenia_z_tabeli_routingu extends TestBase {
+public class TestWyrazenRegularnychReguly extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,12 +15,13 @@ public class Usunięcie_połączenia_z_tabeli_routingu extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Routing();
-        page.clickOnRozwinWszystko();
-        page.usunWpisRoutingu();
-
-
+        page.clickOnTabTestWyrazenRegularnych();
+        page.clickOnTabReguly();
+        page.sendTekstWejsciowy();
+        page.sendpoleprotokolu2();
+        page.wyrazeniaregularne2();
+        page.sendzamiennik();
+        page.clickOnDodajButton();
+//////////////////////////////////////////////////
     }
-
 }

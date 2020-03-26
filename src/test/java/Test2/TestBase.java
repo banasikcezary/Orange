@@ -1,4 +1,4 @@
-package Tests;
+package Test2;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;

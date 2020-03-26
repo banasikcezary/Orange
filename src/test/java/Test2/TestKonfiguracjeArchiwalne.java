@@ -1,10 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-
-public class TestLogowanie extends TestBase {
+public class TestKonfiguracjeArchiwalne extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -16,9 +15,10 @@ public class TestLogowanie extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.assertion();
-
+        page.clickToKonfiguracjeArchiwalne();
+        page.loadToKonfiguracjeArchiwalne();
+        page.checkKonfiguracjeArchiwalne();
+////////////////////////////////////////
 
     }
-
 }

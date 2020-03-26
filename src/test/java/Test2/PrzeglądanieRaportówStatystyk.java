@@ -1,9 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class PrzeglądaniePoziomówLogowaniaModułówSIPProxy extends TestBase {
+public class PrzeglądanieRaportówStatystyk extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,9 +15,8 @@ public class PrzeglądaniePoziomówLogowaniaModułówSIPProxy extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Logowanie();
-
+        page.clickOnTabStatystyki();
 
     }
+
 }

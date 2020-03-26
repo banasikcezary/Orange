@@ -1,9 +1,10 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class ZapisKonfiguracjiSIPProxy extends TestBase {
+
+public class TestLogowanie extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,9 +16,9 @@ public class ZapisKonfiguracjiSIPProxy extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Logowanie();
-        page.saveSettings();
+        page.assertion();
+
 
     }
+
 }

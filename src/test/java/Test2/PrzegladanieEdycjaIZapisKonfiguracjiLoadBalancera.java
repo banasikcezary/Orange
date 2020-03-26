@@ -1,9 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 
-public class PrzeglądanieTabeliWarunkówWstępnych extends TestBase {
+public class PrzegladanieEdycjaIZapisKonfiguracjiLoadBalancera extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,8 +15,12 @@ public class PrzeglądanieTabeliWarunkówWstępnych extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Preconditions();
+        page.tabLB();
+        page.stanZaladowanejKonfiguracji();
+        page.zmienAdresMaszynySip();
+        page.zmienWageMaszynySip();
+        page.zmienPoziomLogowaniaModulu();
+        page.zapisanieLoadBalancera();
 
     }
 }

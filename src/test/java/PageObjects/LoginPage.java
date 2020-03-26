@@ -65,15 +65,15 @@ public class LoginPage {
     @FindBy(id = "message")
     private WebElement stanKonfiguracji;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr/td[1]/input")
+    @FindBy(id = "name_0")
     private WebElement adresMaszynySip;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr/td[2]/input")
+    @FindBy(id = "weight_0")
     private WebElement wagaRuchu;
-    @FindBy(name = "SipLoadBalancerCall")
+    @FindBy(id = "SipLoadBalancerCall4")
     private WebElement poziomLogowaniaModulu;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div[5]/div[2]/button")
+    @FindBy(id = "save")
     private WebElement saveLoadBalancer;
     @FindBy(id = "ARCH")
     private WebElement konfiguracjeArchiwalne;
@@ -91,8 +91,10 @@ public class LoginPage {
     @FindBy(id = "FIT")
     private WebElement tabDopasowanie;
 
-    @FindBy(id = "input")
+    @FindBy(id = "input_regules")
     private WebElement tekstwejsciowy;
+    @FindBy(id = "input_regex")
+    private WebElement tekstwejsciowy2;
 
     @FindBy(id = "regex")
     private WebElement wyrazenieregularne;
@@ -130,18 +132,22 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div/table/tbody[1]/tr[2]/td[6]/label/select")
     private WebElement selectSP;
     ////////////////////////////
-    @FindBy(xpath = "add_group")
+    @FindBy(id = "add_group")
     private WebElement dodajgrupe;
     @FindBy(id = "group_normalization_select")
     private WebElement selectgrupa;
-    @FindBy(xpath = "//*[@id=\"main\"]/div[2]/div[2]/select")
+    @FindBy(id = "routing_select")
     private WebElement routing2;
-    @FindBy(xpath = "//*[@id=\"main\"]/button")
+    @FindBy(id = "add_regule_button")
     private WebElement newregula;
-    @FindBy(id = "normalization_type_1")
+    @FindBy(id = "normalization_type_0")
     private WebElement type;
-    @FindBy(id = "description_1")
+    @FindBy(id = "description_0")
     private WebElement opis;
+    @FindBy(id = "description_1")
+    private WebElement opis2;
+
+
     @FindBy(id = "save")
     private WebElement save2;
 
@@ -149,8 +155,29 @@ public class LoginPage {
     private WebElement output;
     @FindBy(id = "output_edited")
     private WebElement outputText;
+    @FindBy(id = "output_value")
+    private WebElement outputText2;
+    @FindBy(id = "output_save")
+    private WebElement outputSave2;
+
+
     @FindBy(id = "output_save_button")
     private WebElement outputSave;
+    @FindBy(id = "input_1")
+    private WebElement dodajInput;
+
+
+    @FindBy(id = "input_0")
+    private WebElement dodajInput2;
+    @FindBy(xpath="//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-normalization/div/div[3]/div/table/tbody/tr/td[4]")
+    private WebElement output2;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-denormalization/div/div/div[8]/table/tbody/tr/td[4]")
+    private WebElement outputDe;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-denormalization/div/div/div[8]/table/tbody/tr[2]/td[4]")
+    private WebElement outputDe2;
+
 
 
     /////////////////
@@ -160,11 +187,17 @@ public class LoginPage {
     private WebElement edytujID;
     @FindBy(id = "edit_group_desc")
     private WebElement edytujOpis;
-    @FindBy(id = "edit_save_button")
+    @FindBy(id = "edit_save")
     private WebElement saveEdycjaGrupy;
+    @FindBy(id = "edit_save_button")
+    private WebElement saveEdycjaGrupy2;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-denormalization/div/div/div[2]/img")
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-normalization/div/div[1]/div[2]/img")
     private WebElement checkChangeEditGroup;
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-sp-config/div/div[2]/div/div[2]/app-sp-denormalization/div/div/div[2]/img")
+    private WebElement checkChangeEditGroupDe;
+
 
     @FindBy(id = "delete_group")
     private WebElement deleteGroup;
@@ -204,7 +237,7 @@ public class LoginPage {
     private WebElement selectGrupaNormalizacji;
     @FindBy(id = "precondition_method_1")
     private WebElement selectMethod;
-    @FindBy(id = "precondition_row_0")
+    @FindBy(id = "precondition_row_1")
     private WebElement selectWarunek;
     @FindBy(id = "delete_precondition_button")
     private WebElement usunWarunek;
@@ -226,23 +259,34 @@ public class LoginPage {
     @FindBy(id = "group_denormalization_1")
     private WebElement selectGrDenormalizacjiRoutingu;
 
+
+
     @FindBy(id = "delete_server_0")
     private WebElement usunReguleRoutingu;
     @FindBy(id = "add_file_1_0")
     private WebElement dodajWpisRoutingu;
 
 
-    @FindBy(id = "destination_1_1")
+    @FindBy(id = "destination_1_0")
     private WebElement idWpisuRoutingu;
-    @FindBy(id = "weight_1_1")
-    private WebElement wagaWpisuRoutingu;
-    @FindBy(id = "denormalization_1_1")
+
+    @FindBy(id = "weight_1_0")
+    private WebElement wagaWpisuRoutingu2;
+
+
+    @FindBy(id = "denormalization_1_0")
     private WebElement selectGrDenormalizacjiWpisuRoutingu;
+
+
     @FindBy(id = "add_server_button")
     private WebElement buttonDodajServeruRoutingu;
 
     @FindBy(id = "delete_file_0_0")
     private WebElement usunWpisRoutingu;
+    @FindBy(id = "delete_file_1_0")
+    private WebElement usunWpisRoutinguFull;
+
+
     /////////////////////////////////////////////Profile/////////////////////////////////////////
     @FindBy(id = "PROFILES")
     private WebElement profiles;
@@ -270,21 +314,28 @@ public class LoginPage {
     @FindBy(id = "save")
     private WebElement zapiszProfil;
 
-    //////////////////////////////DDDDDDDDDDDDPPPPPPPPPPP
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-dp-config/div/div[2]/div/table/tbody/tr[1]/td[9]/img[1]")
-    private WebElement regulaDp;
+    //////////////////////////////DDDDDDDDDDDDPPPPPPPPPPP////////////////////////////////////////////////////////////////////////////////
+    @FindBy(id = "expand_all")
+    private WebElement rozwinWszystkoDp;
+    @FindBy(id = "add_server_0")
+    private WebElement dodajSerwerDp;
+    @FindBy(id = "type_1")
+    private WebElement TypDp;
+    @FindBy(id = "name_1")
+    private WebElement NazwaDp;
+    @FindBy(id = "description_1")
+    private WebElement OpisDp;
+    @FindBy(id = "weight_1_0")
+    private WebElement WagaDp;
+    @FindBy(id = "add__1_0")
+    private WebElement dodajNowePolaczenieDp;
+    @FindBy(id = "weight_1_1")
+    private WebElement DodajWageDrugiegoPolaczeniaDp;
+    @FindBy(id = "delete_1_1")
+    private WebElement usunDrugiePolaczenieZListy;
+    @FindBy(id = "save")
+    private WebElement zapiszKonfiguracjeDp;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-dp-config/div/div[2]/div/table/tbody/tr[4]/td[1]/img[1]")
-    private WebElement otworzWezlyDp;
-
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-dp-config/div/div[2]/div/table/tbody/tr[5]/td[9]/img[1]")
-    private WebElement dodajWezelDp;
-
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-dp-config/div/div[2]/div/table/tbody/tr[6]/td[9]/img[2]")
-    private WebElement usunWezelDp;
-
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-dp-config/div/div[1]/div[4]/button")
-    private WebElement zapiszDp;
 
 
     private WebDriver driver;
@@ -366,7 +417,7 @@ public class LoginPage {
         logowanie.click();
         logger.info("Konfiguracja Sp");
     }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("konf")
     public void dropDownNormalizacja() {
 
@@ -375,13 +426,8 @@ public class LoginPage {
         logger.info("Konfiguracja Sp");
     }
 
-    @Step("konf")
-    public void showTree() {
 
-        tree.click();
-        logger.info("Konfiguracja Sp");
-    }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("konf")
     public void saveSettings() {
 
@@ -399,7 +445,8 @@ public class LoginPage {
     @Step("konf")
     public void stanZaladowanejKonfiguracji() {
 
-        stanKonfiguracji.getText();
+        String message = stanKonfiguracji.getText();
+        assertEquals(message, "Załadowano konfiguracje LoadBalancera");
         logger.info("Konfiguracja Sp");
     }
 
@@ -443,7 +490,7 @@ public class LoginPage {
     @Step("konf")
     public void checkKonfiguracjeArchiwalne() {
         String info = checkKonfiguracjaSp.getText();
-        assertEquals(info, "Załadowano konfigurację SP o id: 1");
+        assertEquals(info, "Załadowano konfiguracje archiwalną o id 28");
         logger.info("Konfiguracja Sp");
     }
 
@@ -469,6 +516,12 @@ public class LoginPage {
     @Step("Test wyrażeń regularnych")
     public void sendTekstWejsciowy() {
         tekstwejsciowy.sendKeys("");
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void sendTekstWejsciowy2() {
+        tekstwejsciowy2.sendKeys("");
         logger.info("Konfiguracja Sp");
     }
 
@@ -533,7 +586,7 @@ public class LoginPage {
 
         logger.info("Konfiguracja Sp");
     }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void editWaga() {
         wagaedit.clear();
@@ -543,7 +596,7 @@ public class LoginPage {
         assertEquals(waga, "5");
         logger.info("Konfiguracja Sp");
     }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void selecttsp() {
         Select normalizacjaDropDown = new Select(selectSP);
@@ -570,7 +623,7 @@ public class LoginPage {
     @Step("Test wyrażeń regularnych")
     public void dropDownRouting() {
         Select dropDownRouting = new Select(routing2);
-        dropDownRouting.selectByValue("1");
+        dropDownRouting.selectByValue("rt_id_cc_2");
         logger.info("Konfiguracja Sp");
     }
 
@@ -592,6 +645,11 @@ public class LoginPage {
         opis.sendKeys("testopisu");
         logger.info("Konfiguracja Sp");
     }
+    @Step("Test wyrażeń regularnych")
+    public void dodajopis2() {
+        opis2.sendKeys("testopisu");
+        logger.info("Konfiguracja Sp");
+    }
 
     @Step("Test wyrażeń regularnych")
     public void saveGrupe() {
@@ -610,6 +668,40 @@ public class LoginPage {
         output.click();
         outputText.sendKeys("testOutputu");
         outputSave.click();
+        logger.info("Konfiguracja Sp");
+    }
+///////////////////////////////////////////////////////////////////NORMALIZACJA
+    @Step("Test wyrażeń regularnych")
+    public void dodajOutput2() {
+        output2.click();
+        outputText.sendKeys("testOutputu");
+        outputSave.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajOutput3() {
+        outputDe.click();
+        outputText2.sendKeys("testOutputu");
+        outputSave2.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void dodajOutputDe2() {
+        outputDe2.click();
+        outputText2.sendKeys("testOutputu");
+        outputSave2.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void dodajInput() {
+        dodajInput.sendKeys("1234");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajInput2() {
+        dodajInput2.sendKeys("1234");
         logger.info("Konfiguracja Sp");
     }
 
@@ -638,11 +730,26 @@ public class LoginPage {
     }
 
     @Step("Test wyrażeń regularnych")
+    public void saveEdycjaGrupy2() {
+        saveEdycjaGrupy2.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
     public void checkChangeEditGroup() {
         checkChangeEditGroup.click();
         logger.info("Konfiguracja Sp");
 
         String infoo = checkChangeEditGroup.getAttribute("ng-reflect-ngb-tooltip");
+        assertEquals(infoo, "1234");
+        System.out.println(infoo);
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void checkChangeEditGroupDe() {
+
+
+        String infoo = checkChangeEditGroupDe.getAttribute("ng-reflect-ngb-tooltip");
         assertEquals(infoo, "1234");
         System.out.println(infoo);
     }
@@ -795,7 +902,7 @@ public class LoginPage {
         dropDownType.selectByValue("gr_id_denorm_cc_3");
         logger.info("Konfiguracja Sp");
     }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void usunReguleRoutingu() {
         usunReguleRoutingu.click();
@@ -810,13 +917,26 @@ public class LoginPage {
 
     @Step("Test wyrażeń regularnych")
     public void idWpisuRoutingu() {
+        idWpisuRoutingu.clear();
         idWpisuRoutingu.sendKeys("123_route_user@domena_route_rt_i");
+        logger.info("Konfiguracja Sp");
+    }
+
+
+
+    @Step("Test wyrażeń regularnych")
+    public void wagaWpisuRoutingu2() {
+        wagaWpisuRoutingu2.clear();
+        wagaWpisuRoutingu2.sendKeys("95");
+
         logger.info("Konfiguracja Sp");
     }
 
     @Step("Test wyrażeń regularnych")
     public void wagaWpisuRoutingu() {
-        wagaWpisuRoutingu.sendKeys("5");
+        wagaWpisuRoutingu2.clear();
+        wagaWpisuRoutingu2.sendKeys("100");
+
         logger.info("Konfiguracja Sp");
     }
 
@@ -827,16 +947,22 @@ public class LoginPage {
         logger.info("Konfiguracja Sp");
     }
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void buttonDodajServeruRoutingu() {
         boolean displayed = buttonDodajServeruRoutingu.isDisplayed();
         assertTrue(displayed);
         logger.info("Konfiguracja Sp");
     }
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void usunWpisRoutingu() {
         usunWpisRoutingu.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void usunWpisRoutinguFull() {
+        usunWpisRoutinguFull.click();
         logger.info("Konfiguracja Sp");
     }
 
@@ -916,33 +1042,61 @@ public class LoginPage {
 
     //////////////////////////////////////////////////////////////
     @Step("Test wyrażeń regularnych")
-    public void dodajRegulaDp() {
-        regulaDp.click();
+    public void rozwinWszystkoDp() {
+        rozwinWszystkoDp.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajSerwerDp() {
+        dodajSerwerDp.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void chooseTypDp() {
+        Select dropDownType = new Select(TypDp);
+        dropDownType.selectByValue("Real");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void dodajNazwaDp() {
+        NazwaDp.sendKeys("Test nazwy Dp");
         logger.info("Konfiguracja Sp");
     }
 
     @Step("Test wyrażeń regularnych")
-    public void otworzWezlyDp() {
-        otworzWezlyDp.click();
-        logger.info("Konfiguracja Sp");
-    }
-
-
-    @Step("Test wyrażeń regularnych")
-    public void dodajWezelDp() {
-        dodajWezelDp.click();
+    public void dodajOpisDp() {
+        OpisDp.sendKeys("Test opisu Dp");
         logger.info("Konfiguracja Sp");
     }
 
     @Step("Test wyrażeń regularnych")
-    public void usunWezelDp() {
-        usunWezelDp.click();
+    public void dodajWageDp() {
+        WagaDp.clear();
+        WagaDp.sendKeys("100");
         logger.info("Konfiguracja Sp");
     }
 
     @Step("Test wyrażeń regularnych")
-    public void zapiszDp() {
-        zapiszDp.click();
+    public void dodajNowePolaczenieDp() {
+        dodajNowePolaczenieDp.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void DodajWageDrugiegoPolaczeniaDp() {
+        WagaDp.clear();
+        WagaDp.sendKeys("50");
+        logger.info("Konfiguracja 50");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void usunPierwszePolaczenieZListy() {
+        usunDrugiePolaczenieZListy.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void zapiszKonfiguracjeDp() {
+        zapiszKonfiguracjeDp.click();
         logger.info("Konfiguracja Sp");
     }
 

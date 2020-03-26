@@ -1,10 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
 import io.qameta.allure.Description;
-import org.openqa.selenium.Alert;
 
-public class UsunięcieWpisuZTabeliWarunkówWstępnych extends TestBase {
+public class TestWyrazenRegularnychDopasowanie extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -16,13 +15,12 @@ public class UsunięcieWpisuZTabeliWarunkówWstępnych extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Preconditions();
-        page.selectWarunek();
-        page.usunWarunek();
-        page.saveGrupe();
-        Alert alert = driver.switchTo().alert();
+        page.clickOnTabTestWyrazenRegularnych();
+        page.clickOnTabDopasowanie();
+        page.sendTekstWejsciowy2();
+        page.sendwyrazenieregularne();
+        page.clickonbuttwynikdopasowania();
+        page.checkwynikdopasowania();
 
-        alert.accept();
     }
 }

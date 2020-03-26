@@ -1,6 +1,7 @@
 package Tests;
 
 import PageObjects.LoginPage;
+import Test2.TestBase;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 

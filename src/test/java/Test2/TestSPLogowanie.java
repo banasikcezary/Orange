@@ -1,14 +1,14 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
+import Test2.TestBase;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
+import org.testng.annotations.Test;
 
+public class TestSPLogowanie extends TestBase {
 
-public class DodanieNowegoPolaczeniaWTabeliRoutingu extends TestBase {
-
-
-    @org.testng.annotations.Test
+    @Test
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 
     public void asUserShouldBeAbleToLoggin() {
@@ -18,21 +18,13 @@ public class DodanieNowegoPolaczeniaWTabeliRoutingu extends TestBase {
         page.sendPassword();
         page.goSubmit();
         page.konfiguracjaSp();
-        page.Routing();
-        page.clickOnRozwinWszystko();
-        page.dodajWpisRoutingu();
-        page.idWpisuRoutingu();
-        page.wagaWpisuRoutingu();
-        page.selectGrDenormalizacjiWpisuRoutingu();
+        page.Logowanie();
+        page.globalnyPoziomLogowania();
         page.saveGrupe();
+
         Alert alert = driver.switchTo().alert();
         String info = alert.getText();
         System.out.println(info);
         alert.accept();
-        page.konfiguracjaSp();
-        page.Routing();
-        page.clickOnRozwinWszystko();
-      page.asercjaDodanieNowegoPolaczenia();
     }
-
 }

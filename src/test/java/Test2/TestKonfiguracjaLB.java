@@ -1,9 +1,10 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
+import Test2.TestBase;
 import io.qameta.allure.Description;
 
-public class Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu extends TestBase {
+public class TestKonfiguracjaLB extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -15,10 +16,8 @@ public class Wyświetlanie_drzewa_połączeń_dla_reguły_w_tabeli_routingu exte
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Routing();
-
+        page.tabLB();
+        page.stanZaladowanejKonfiguracji();
 
     }
-
 }
