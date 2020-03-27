@@ -22,40 +22,48 @@ public class TestRouting extends TestBase {
             page.Routing();
             page.clickOnRozwinWszystko();
             page.dodajReguleRoutingu();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste id reguły routingu");
+            page.submitError();
+
+            page.dodajIdRoutinguInvalid();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Id powinno być unikalne");
+            page.submitError();
+
+
+
             page.dodajIdRoutingu();
+            assertEquals(page.checkerrorNorm(),"Puste pole grupy denormalizacji w połączeniu w regule routingu o id: 321");
+            page.submitError();
+
+            page.selectGrDenormalizacjiWpisuRoutingu();
             page.dodajOpisRoutingu();
             page.dodajDpRoutingu();
             page.selectGrDenormalizacjiRoutingu();
-
             page.dodajWpisRoutingu();
             page.usunWpisRoutinguFull();
             page.idWpisuRoutingu();
             page.wagaWpisuRoutingu2();
-            page.selectGrDenormalizacjiWpisuRoutingu();
-
             page.saveGrupe();
-            Alert alert = driver.switchTo().alert();
-            String info = alert.getText();
-            System.out.println(info);
-            alert.accept();
-
-             assertEquals(info,"Przy zapisie konfiguracji napotkano następujące błędy:\nSuma wag jest różna od 100 w routingu o id: 321\n");
+            assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: 321 jest różna od 100");
+            page.submitError();
 
 
             page.wagaWpisuRoutingu();
             page.saveGrupe();
-            String info2 = alert.getText();
-            System.out.println(info2);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
+
 
             page.konfiguracjaSp();
             page.Routing();
             page.clickOnRozwinWszystko();
             page.asercjaDodanieNowegoPolaczenia();
 
-           // page.usunSerwer();
+            page.DeleteSerwerRout();
             page.saveGrupe();
-            alert.accept();
+            page.submitError();
 
 
 

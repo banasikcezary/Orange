@@ -26,23 +26,20 @@ public class TestPreconditions extends TestBase {
 
         page.DodajWarunek();
         page.saveGrupe();
-        Alert alert = driver.switchTo().alert();
-        String info1 = alert.getText();
-        System.out.println(info1);
-        assertEquals(info1, ALERT_BLAD_WARUNEK_WSTEPNY);
-        alert.accept();
+
+        assertEquals(page.checkerrorNorm(), "Puste pole methods w w warunkach wstępnych");
+        page.submitError();
 
         page.selectMethod();
         page.saveGrupe();
-        String info2 = alert.getText();
-        System.out.println(info2);
-        assertEquals(info2, "Przy zapisie konfiguracji napotkano następujące błędy:\n" +
-                "Puste pole grupy normalizacji w warunkach wstępnych\n");
-        alert.accept();
+
+        assertEquals(page.checkerrorNorm(), "Puste pole grupy normalizacji w warunkach wstępnych");
+        page.submitError();
 
         page.selectGrupaNormalizacji();
         page.saveGrupe();
-        alert.accept();
+        assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+        page.submitError();
 
         page.konfiguracjaSp();
         page.Preconditions();
@@ -50,8 +47,8 @@ public class TestPreconditions extends TestBase {
         page.selectWarunek();
         page.usunWarunek();
         page.saveGrupe();
-        alert.accept();
-
+        assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+        page.submitError();
 
     }
 }

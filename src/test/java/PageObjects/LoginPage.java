@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static javax.swing.text.html.CSS.getAttribute;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -335,7 +336,15 @@ public class LoginPage {
     private WebElement usunDrugiePolaczenieZListy;
     @FindBy(id = "save")
     private WebElement zapiszKonfiguracjeDp;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/p[2]")
+    private WebElement checkerrorNorm;
+    @FindBy(id = "sp_save_button")
+    private WebElement submitError;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/div[2]/p")
+    private WebElement checkerrorNormSave;
 
+    @FindBy(id = "delete_server_1")
+    private WebElement deleteSerwerRout;
 
 
     private WebDriver driver;
@@ -417,7 +426,7 @@ public class LoginPage {
         logowanie.click();
         logger.info("Konfiguracja Sp");
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("konf")
     public void dropDownNormalizacja() {
 
@@ -427,7 +436,7 @@ public class LoginPage {
     }
 
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+///@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("konf")
     public void saveSettings() {
 
@@ -586,7 +595,7 @@ public class LoginPage {
 
         logger.info("Konfiguracja Sp");
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void editWaga() {
         wagaedit.clear();
@@ -596,7 +605,7 @@ public class LoginPage {
         assertEquals(waga, "5");
         logger.info("Konfiguracja Sp");
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void selecttsp() {
         Select normalizacjaDropDown = new Select(selectSP);
@@ -610,7 +619,7 @@ public class LoginPage {
         dodajgrupe.click();
         logger.info("Konfiguracja Sp");
     }
-
+public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void selectGrupa() {
 
@@ -618,7 +627,24 @@ public class LoginPage {
         Select dropDownGrupa = new Select(selectgrupa);
         int selectOptions = dropDownGrupa.getOptions().size();
         dropDownGrupa.selectByIndex(selectOptions - 1);
+         x = dropDownGrupa.getFirstSelectedOption();
+        System.out.println(x.getText());
     }
+
+    @Step("Test wyrażeń regularnych")
+    public String ostatniElementDropDown() {
+        return x.getText();
+    }
+    @Step("Test wyrażeń regularnych")
+    public String checkerrorNorm() {
+        return checkerrorNorm.getText();
+    }
+    @Step("Test wyrażeń regularnych")
+    public String checkerrorNormSave() {
+        return checkerrorNormSave.getText();
+    }
+
+
 
     @Step("Test wyrażeń regularnych")
     public void dropDownRouting() {
@@ -655,11 +681,11 @@ public class LoginPage {
     public void saveGrupe() {
         save2.click();
         logger.info("Konfiguracja Sp");
-        WebDriverWait wait = new WebDriverWait(driver, 300 /*timeout in seconds*/);
-        if (wait.until(ExpectedConditions.alertIsPresent()) == null)
-            System.out.println("alert was not present");
-        else
-            System.out.println("alert was present");
+//        WebDriverWait wait = new WebDriverWait(driver, 300 /*timeout in seconds*/);
+//        if (wait.until(ExpectedConditions.alertIsPresent()) == null)
+//            System.out.println("alert was not present");
+//        else
+//            System.out.println("alert was present");
 ///////////////////////////
     }
 
@@ -782,7 +808,19 @@ public class LoginPage {
         Select dropDownGrupa = new Select(selectDe);
         int selectOptions = dropDownGrupa.getOptions().size();
         dropDownGrupa.selectByIndex(selectOptions - 1);
+        x = dropDownGrupa.getFirstSelectedOption();
+        System.out.println(x.getText());
     }
+
+
+
+    @Step("Test wyrażeń regularnych")
+    public String ostatniElementDropDownDenormalizacja() {
+        return x.getText();
+    }
+
+
+
 
     @Step("Test wyrażeń regularnych")
     public void dodajreguleDe() {
@@ -883,6 +921,11 @@ public class LoginPage {
         dodajIdRoutingu.sendKeys("321");
 
     }
+    @Step("Test wyrażeń regularnych")
+    public void dodajIdRoutinguInvalid() {
+        dodajIdRoutingu.sendKeys("rt_id_cc_1");
+
+    }
 
     @Step("Test wyrażeń regularnych")
     public void dodajOpisRoutingu() {
@@ -902,7 +945,7 @@ public class LoginPage {
         dropDownType.selectByValue("gr_id_denorm_cc_3");
         logger.info("Konfiguracja Sp");
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void usunReguleRoutingu() {
         usunReguleRoutingu.click();
@@ -947,14 +990,14 @@ public class LoginPage {
         logger.info("Konfiguracja Sp");
     }
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void buttonDodajServeruRoutingu() {
         boolean displayed = buttonDodajServeruRoutingu.isDisplayed();
         assertTrue(displayed);
         logger.info("Konfiguracja Sp");
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @Step("Test wyrażeń regularnych")
     public void usunWpisRoutingu() {
         usunWpisRoutingu.click();
@@ -1097,6 +1140,17 @@ public class LoginPage {
     @Step("Test wyrażeń regularnych")
     public void zapiszKonfiguracjeDp() {
         zapiszKonfiguracjeDp.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void submitError() {
+        submitError.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void DeleteSerwerRout() {
+        deleteSerwerRout.click();
         logger.info("Konfiguracja Sp");
     }
 

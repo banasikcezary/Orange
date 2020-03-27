@@ -5,6 +5,8 @@ import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class TestNormalization  extends TestBase {
 
 
@@ -19,20 +21,32 @@ public class TestNormalization  extends TestBase {
             page.goSubmit();
             page.konfiguracjaSp();
             page.Normalizacja();
-
             page.clickDodajGrupe();
             page.selectGrupa();
-            page.dropDownRouting();
             page.dodajRegule();
+           page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id: "+page.ostatniElementDropDown());
+
+          page.submitError();
+
+            page.dropDownRouting();
+            page.saveGrupe();
+
+             assertEquals(page.checkerrorNorm(),"Puste pole Input w grupie normalizacji o id: "+page.ostatniElementDropDown());
+            page.submitError();
+
             page.selectType();
-page.dodajInput2();
-page.dodajOutput2();
+            page.dodajInput2();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste pole Output w grupie normalizacji o id: "+page.ostatniElementDropDown());
+            page.submitError();
+
+            page.dodajOutput2();
             page.dodajopis();
             page.saveGrupe();
-            Alert alert = driver.switchTo().alert();
-            String info = alert.getText();
-            System.out.println(info);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
+
 
             page.Normalizacja();
             page.selectGrupa();
@@ -42,9 +56,8 @@ page.dodajOutput2();
             page.dodajOutput();
             page.dodajopis2();
             page.saveGrupe();
-            String info2 = alert.getText();
-            System.out.println(info2);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
             page.Normalizacja();
             page.selectGrupa();
@@ -54,7 +67,8 @@ page.dodajOutput2();
             page.saveEdycjaGrupy2();
             page.checkChangeEditGroup();
             page.saveGrupe();
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
 
             page.konfiguracjaSp();
@@ -62,7 +76,8 @@ page.dodajOutput2();
             page.selectGrupa();
             page.deleteGroup();
             page.saveGrupe();
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
 
         }

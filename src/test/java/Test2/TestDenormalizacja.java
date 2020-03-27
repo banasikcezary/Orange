@@ -4,6 +4,8 @@ import PageObjects.LoginPage;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 
+import static org.testng.Assert.assertEquals;
+
 public class TestDenormalizacja  extends TestBase {
 
 
@@ -21,15 +23,30 @@ public class TestDenormalizacja  extends TestBase {
             page.clickDodajGrupe();
             page.selectTablicaDe();
             page.dodajreguleDe();
+            page.saveGrupe();
+         assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
+            page.submitError();
+
+
             page.selectTypeDe();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
+            page.submitError();
+
             page.dodajInput2();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id:"+page.ostatniElementDropDownDenormalizacja());
+            page.submitError();
+
             page.dodajOutput3();
+            page.saveGrupe();
+            assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id:"+page.ostatniElementDropDownDenormalizacja());
+            page.submitError();
+
             page.dodajOpisDe();
             page.saveGrupe();
-            Alert alert = driver.switchTo().alert();
-            String info = alert.getText();
-            System.out.println(info);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
             page.konfiguracjaSp();
             page.Denormalizacja();
@@ -40,9 +57,8 @@ public class TestDenormalizacja  extends TestBase {
             page.dodajOutputDe2();
             page.dodajOpisDe2();
             page.saveGrupe();
-            String info2 = alert.getText();
-            System.out.println(info2);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
             page.konfiguracjaSp();
             page.Denormalizacja();
@@ -53,17 +69,15 @@ public class TestDenormalizacja  extends TestBase {
             page.saveEdycjaGrupy();
             page.checkChangeEditGroupDe();
             page.saveGrupe();
-            String info3 = alert.getText();
-            System.out.println(info3);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
 
             page.konfiguracjaSp();
             page.Denormalizacja();
             page.selectTablicaDe();
             page.deleteGroup();
             page.saveGrupe();
-            String info4= alert.getText();
-            System.out.println(info4);
-            alert.accept();
+            assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+            page.submitError();
         }
 }
