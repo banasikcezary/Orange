@@ -21,22 +21,39 @@ public class TestKonfiguracjeDP extends TestBase {
         page.konfiguracjaDP();
         page.rozwinWszystkoDp();
         page.dodajSerwerDp();
-        page.chooseTypDp();
-        page.dodajNazwaDp();
-        page.dodajOpisDp();
-        page.dodajWageDp();
-        page.dodajNowePolaczenieDp();
-        page.DodajWageDrugiegoPolaczeniaDp();
-        page.zapiszKonfiguracjeDp();
+        page.clearIdDp();
         Alert alert = driver.switchTo().alert();
+
+        page.zapiszKonfiguracjeDp();
         String info = alert.getText();
         System.out.println(info);
-        assertEquals(info, "Przy zapisie konfiguracji napotkano następujące błędy:\n" +
-                "Suma wag w routingu o id: dp_routing_cc1 wynosi 50i jest różna od 100\n");
+        assertEquals(info, "Id nie może być puste");
         alert.accept();
-        page.dodajWageDp();
-        page.usunPierwszePolaczenieZListy();
-        page.zapiszKonfiguracjeDp();
+
+//        page.setNotUniqueIdDp();
+//        page.zapiszKonfiguracjeDp();
+//        String info2 = alert.getText();
+//        System.out.println(info);
+//        assertEquals(info2, "Id powinno być unikalne");
+//        alert.accept();
+//
+//        page.chooseTypDp();
+//        page.dodajNazwaDp();
+//        page.dodajOpisDp();
+//        page.dodajWageIncorrencDp();
+//        alert.accept();
+//        page.dodajWageDp();
+//        page.dodajNowePolaczenieDp();
+//        page.DodajWageDrugiegoPolaczeniaDp();
+//        page.zapiszKonfiguracjeDp();
+//        String info3 = alert.getText();
+//        System.out.println(info);
+//        assertEquals(info3, "Przy zapisie konfiguracji napotkano następujące błędy:\n" +
+//                "Suma wag w routingu o id: dp_routing_cc1 wynosi 50i jest różna od 100\n");
+//        alert.accept();
+//        page.dodajWageDp();
+//        page.usunPierwszePolaczenieZListy();
+//        page.zapiszKonfiguracjeDp();
 
     }
 

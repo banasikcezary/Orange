@@ -23,17 +23,24 @@ public class TestRouting extends TestBase {
             page.clickOnRozwinWszystko();
             page.dodajReguleRoutingu();
             page.saveGrupe();
+
             assertEquals(page.checkerrorNorm(),"Puste id reguły routingu");
             page.submitError();
 
+
             page.dodajIdRoutinguInvalid();
             page.saveGrupe();
-            assertEquals(page.checkerrorNorm(),"Id powinno być unikalne");
-            page.submitError();
+            Alert alert = driver.switchTo().alert();
+            String info = alert.getText();
+
+
+            assertEquals(info,"Id powinno być unikalne");
+            alert.accept();
 
 
 
             page.dodajIdRoutingu();
+            page.saveGrupe();
             assertEquals(page.checkerrorNorm(),"Puste pole grupy denormalizacji w połączeniu w regule routingu o id: 321");
             page.submitError();
 
@@ -45,6 +52,7 @@ public class TestRouting extends TestBase {
             page.usunWpisRoutinguFull();
             page.idWpisuRoutingu();
             page.wagaWpisuRoutingu2();
+
             page.saveGrupe();
             assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: 321 jest różna od 100");
             page.submitError();

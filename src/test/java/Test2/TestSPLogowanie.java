@@ -6,6 +6,8 @@ import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class TestSPLogowanie extends TestBase {
 
     @Test
@@ -21,10 +23,7 @@ public class TestSPLogowanie extends TestBase {
         page.Logowanie();
         page.globalnyPoziomLogowania();
         page.saveGrupe();
-
-        Alert alert = driver.switchTo().alert();
-        String info = alert.getText();
-        System.out.println(info);
-        alert.accept();
+        assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
+        page.submitError();
     }
 }

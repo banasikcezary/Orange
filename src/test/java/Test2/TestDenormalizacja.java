@@ -25,25 +25,22 @@ public class TestDenormalizacja  extends TestBase {
             page.dodajreguleDe();
             page.saveGrupe();
          assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
-            page.submitError();
+         page.submitError();
 
 
             page.selectTypeDe();
             page.saveGrupe();
-            assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
+            assertEquals(page.checkerrorNorm(),"Puste pole Input w grupie denormalizacji o id: "+page.ostatniElementDropDownDenormalizacja());
             page.submitError();
 
             page.dodajInput2();
             page.saveGrupe();
-            assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id:"+page.ostatniElementDropDownDenormalizacja());
+            assertEquals(page.checkerrorNorm(),"Puste pole Output w grupie denormalizacji o id: "+page.ostatniElementDropDownDenormalizacja());
             page.submitError();
 
             page.dodajOutput3();
-            page.saveGrupe();
-            assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id:"+page.ostatniElementDropDownDenormalizacja());
-            page.submitError();
-
             page.dodajOpisDe();
+
             page.saveGrupe();
             assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
             page.submitError();

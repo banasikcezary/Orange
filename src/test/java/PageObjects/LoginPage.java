@@ -284,7 +284,7 @@ public class LoginPage {
 
     @FindBy(id = "delete_file_0_0")
     private WebElement usunWpisRoutingu;
-    @FindBy(id = "delete_file_1_0")
+    @FindBy(id = "delete_file_1_1")
     private WebElement usunWpisRoutinguFull;
 
 
@@ -307,10 +307,10 @@ public class LoginPage {
     private WebElement usunProfil;
     @FindBy(id = "service_2_0")
     private WebElement dodajNazwaUslugiProfil;
-    @FindBy(id = "address_2_0")
+    @FindBy(xpath = "(//*[@id=\"address_2_0\"])[1]")
     private WebElement dodajNazwaAdresuProfil;
 
-    @FindBy(xpath = "//*[@id=\"address_2_0\"][@type='number']")
+    @FindBy(xpath = "(//*[@id=\"address_2_0\"])[2]")
     private WebElement dodajWageAdresuProfil;
     @FindBy(id = "save")
     private WebElement zapiszProfil;
@@ -345,6 +345,20 @@ public class LoginPage {
 
     @FindBy(id = "delete_server_1")
     private WebElement deleteSerwerRout;
+    @FindBy(id = "weight_2")
+    private WebElement weightLb;
+    @FindBy(xpath = "(//*[@id=\"service_1\"])[1]")
+    private WebElement rozwinuslugi;
+    @FindBy(xpath = "//*[@id=\"address_2\"]/img")
+    private WebElement rozwinadresy;
+
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[12]")
+    private WebElement clickProfil;
+
+    @FindBy(id = "id_1")
+    private WebElement clearIdDp;
+
+
 
 
     private WebDriver driver;
@@ -1049,7 +1063,7 @@ public WebElement x;
 
     @Step("Test wyrażeń regularnych")
     public void dodajAdresProfil() {
-        dodajAdresProfil.sendKeys("qwerty");
+        dodajAdresProfil.click();
         logger.info("Konfiguracja Sp");
     }
 
@@ -1067,7 +1081,7 @@ public WebElement x;
 
     @Step("Test wyrażeń regularnych")
     public void dodajNazwaAdresuProfil() {
-        dodajNazwaAdresuProfil.sendKeys("SMS");
+        dodajNazwaAdresuProfil.sendKeys("192.168.10.01");
         logger.info("Konfiguracja Sp");
     }
 
@@ -1119,6 +1133,14 @@ public WebElement x;
         logger.info("Konfiguracja Sp");
     }
 
+
+    @Step("Test wyrażeń regularnych")
+    public void dodajWageIncorrencDp() {
+        WagaDp.clear();
+        WagaDp.sendKeys("111");
+        logger.info("Konfiguracja Sp");
+    }
+
     @Step("Test wyrażeń regularnych")
     public void dodajNowePolaczenieDp() {
         dodajNowePolaczenieDp.click();
@@ -1153,7 +1175,45 @@ public WebElement x;
         deleteSerwerRout.click();
         logger.info("Konfiguracja Sp");
     }
+    @Step("Test wyrażeń regularnych")
+    public void setWeightLbIncorrect () {
+        weightLb.sendKeys("110");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void setWeightLbCorrect() {
+        weightLb.clear();
+        weightLb.sendKeys("40");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void clickOnRozwinUslugi() {
+        rozwinuslugi.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void clickOnRozwinAdresy() {
+        rozwinadresy.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void clickOnProfil() {
+        clickProfil.click();
+        logger.info("Konfiguracja Sp");
+    }
 
+    @Step("Test wyrażeń regularnych")
+    public void clearIdDp() {
+        clearIdDp.clear();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void setNotUniqueIdDp() {
+        clearIdDp.clear();
+        clearIdDp.sendKeys("dp_routing_cc1");
+        logger.info("Konfiguracja Sp");
+    }
 
 }
 

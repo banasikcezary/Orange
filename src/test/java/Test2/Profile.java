@@ -20,13 +20,19 @@ public class Profile extends TestBase {
         page.dodajProfil();
         page.dodajIdProfil();
         page.dodajOpisProfil();
+        page.clickOnProfil();
         page.dodajUslugeProfil();
-        page.dodajAdresProfil();
-        page.usunProfil();
+        page.clickOnRozwinUslugi();
         page.dodajNazwaUslugiProfil();
+        page.clickOnProfil();
+        page.dodajAdresProfil();
+        page.clickOnRozwinAdresy();
         page.dodajNazwaAdresuProfil();
         page.dodajWageAdresuProfil();
         page.zapiszProfil();
+        page.clickOnProfil();
+        page.usunProfil();
+
 
     }
 }
