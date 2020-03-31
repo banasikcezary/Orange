@@ -14,7 +14,7 @@ public class TestPreconditions extends TestBase {
     @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
 
     public void asUserShouldBeAbleToLoggin() {
-        final String ALERT_BLAD_WARUNEK_WSTEPNY = "Przy zapisie konfiguracji napotkano następujące błędy:\n" + "Puste pole methods w w warunkach wstępnych\n";
+        //final String ALERT_BLAD_WARUNEK_WSTEPNY = "Przy zapisie konfiguracji napotkano następujące błędy:\n" + "Puste pole methods w w warunkach wstępnych\n";
 
         LoginPage page = new LoginPage(driver);
 

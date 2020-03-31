@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SIP Router GUI">
+
+    <test name="Konfiguracja SP - Precondition">
+        <classes>
+            <class name="Test2.TestPreconditions"/>
+        </classes>
+    </test>
+
+    <test name="Konfiguracja SP - Normalizacja">
+        <classes>
+            <class name="Test2.TestNormalization"/>
+        </classes>
+    </test>
+
+    <test name="Konfiguracja SP - Routing">
+        <classes>
+            <class name="Test2.TestRouting"/>
+        </classes>
+    </test>
+    <test name="Konfiguracja SP - Denormalizacja">
+        <classes>
+            <class name="Test2.TestDenormalizacja"/>
+        </classes>
+    </test>
+
+    <test name="Konfiguracja SP - Logowanie">
+        <classes>
+            <class name="Test2.TestSPLogowanie"/>
+        </classes>
+    </test>
+
+    ///////////////////////////////////////////////////////
+
+    <test name="Konfiguracja LB">
+        <classes>
+            <class name="Test2.TestKonfiguracjaLB"/>
+        </classes>
+    </test>
+
+    //////////////////////////////////////////////////////////
+
+    <test name="Konfiguracja DP">
+        <classes>
+            <class name="Test2.TestKonfiguracjeDP"/>
+        </classes>
+    </test>
+    //////////////////////////////////////////////////////////
+
+    <test name="Konfiguracje Archiwalne">
+        <classes>
+            <class name="Test2.TestKonfiguracjeArchiwalne"/>
+        </classes>
+    </test>
+
+    //////////////////////////////////////////////////////////
+    <test name="TestWyrazenRegularnychDopasowanie">
+        <classes>
+            <class name="Test2.TestWyrazenRegularnychDopasowanie"/>
+        </classes>
+    </test>
+
+    <test name="TestWyrazenRegularnychReguly">
+        <classes>
+            <class name="Test2.TestWyrazenRegularnychReguly"/>
+        </classes>
+    </test>
+
+    ///////////////////////////////////////////////////////////
+
+    <test name="PrzeglądanieRaportówStatystyk">
+        <classes>
+            <class name="Test2.PrzeglądanieRaportówStatystyk"/>
+        </classes>
+    </test>
+
+    /////////////////////////////////////////////////////////////
+
+    <test name="Profile">
+        <classes>
+            <class name="Test2.Profile"/>
+        </classes>
+    </test>
+</suite>

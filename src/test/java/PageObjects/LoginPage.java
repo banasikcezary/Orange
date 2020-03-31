@@ -3,8 +3,11 @@ package PageObjects;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -66,7 +69,7 @@ public class LoginPage {
     @FindBy(id = "message")
     private WebElement stanKonfiguracji;
 
-    @FindBy(id = "name_0")
+    @FindBy(id = "name_2")
     private WebElement adresMaszynySip;
 
     @FindBy(id = "weight_0")
@@ -357,6 +360,9 @@ public class LoginPage {
 
     @FindBy(id = "id_1")
     private WebElement clearIdDp;
+    @FindBy(id = "dp_save_button")
+    private WebElement saveButtonDp;
+
 
 
 
@@ -1210,8 +1216,31 @@ public WebElement x;
 
     @Step("Test wyrażeń regularnych")
     public void setNotUniqueIdDp() {
-        clearIdDp.clear();
-        clearIdDp.sendKeys("dp_routing_cc1");
+
+
+        clearIdDp.sendKeys(Keys.chord(Keys.CONTROL, "a"), "dp_routing_cc1");
+        zapiszKonfiguracjeDp.click();
+
+
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = driver.switchTo().alert();
+            String info = alert.getText();
+            System.out.println(info);
+            assertEquals(info,"Id powinno być unikalne");
+            alert.accept();
+        } catch (Exception e) {
+        }
+//        Alert alert = driver.switchTo().alert();
+//        String info3 = alert.getText();
+//        assertEquals(info3, "Id powinno być unikalne");
+   logger.info("Konfiguracja Sp");
+    }
+
+    @Step("Test wyrażeń regularnych")
+    public void setSaveButtonDp() {
+        saveButtonDp.click();
         logger.info("Konfiguracja Sp");
     }
 

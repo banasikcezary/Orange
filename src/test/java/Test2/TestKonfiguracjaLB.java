@@ -27,7 +27,7 @@ public class TestKonfiguracjaLB extends TestBase {
         page.goSubmit();
         page.tabLB();
         page.stanZaladowanejKonfiguracji();
-        page.dodajOpisProfil();
+        page.zmienAdresMaszynySip();
         page.setWeightLbIncorrect();
 
 
@@ -47,8 +47,7 @@ public class TestKonfiguracjaLB extends TestBase {
                page.setWeightLbCorrect();
         page.zmienPoziomLogowaniaModulu();
 
-        page.saveSettings();
-
+        page.zapisanieLoadBalancera();
 
 
     }
