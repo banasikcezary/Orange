@@ -712,7 +712,7 @@ public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void dodajOutput() {
         output.click();
-        outputText.sendKeys("testOutputu");
+        outputText.sendKeys("user_part: \"rect\", \"dialog\"");
         outputSave.click();
         logger.info("Konfiguracja Sp");
     }
@@ -720,14 +720,14 @@ public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void dodajOutput2() {
         output2.click();
-        outputText.sendKeys("testOutputu");
+        outputText.sendKeys("user_part: \"rect\", \"dialog\"");
         outputSave.click();
         logger.info("Konfiguracja Sp");
     }
     @Step("Test wyrażeń regularnych")
     public void dodajOutput3() {
         outputDe.click();
-        outputText2.sendKeys("testOutputu");
+        outputText2.sendKeys("user_part: \"rect\", \"dialog\"");
         outputSave2.click();
         logger.info("Konfiguracja Sp");
     }
@@ -735,7 +735,7 @@ public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void dodajOutputDe2() {
         outputDe2.click();
-        outputText2.sendKeys("testOutputu");
+        outputText2.sendKeys("user_part: \"rect\", \"dialog\"");
         outputSave2.click();
         logger.info("Konfiguracja Sp");
     }
@@ -962,7 +962,7 @@ public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void selectGrDenormalizacjiRoutingu() {
         Select dropDownType = new Select(selectGrDenormalizacjiRoutingu);
-        dropDownType.selectByValue("gr_id_denorm_cc_3");
+        dropDownType.selectByValue("gr_id_denorm_cc_1");
         logger.info("Konfiguracja Sp");
     }
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1006,7 +1006,7 @@ public WebElement x;
     @Step("Test wyrażeń regularnych")
     public void selectGrDenormalizacjiWpisuRoutingu() {
         Select dropDownType = new Select(selectGrDenormalizacjiWpisuRoutingu);
-        dropDownType.selectByValue("gr_id_denorm_cc_3");
+        dropDownType.selectByValue("gr_id_denorm_cc_1");
         logger.info("Konfiguracja Sp");
     }
 
