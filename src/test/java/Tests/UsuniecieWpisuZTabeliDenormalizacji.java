@@ -5,7 +5,7 @@ import Test2.TestBase;
 import io.qameta.allure.Description;
 import org.openqa.selenium.Alert;
 
-public class UsunięcieWpisuZTabeliDenormalizacji extends TestBase {
+public class UsuniecieWpisuZTabeliDenormalizacji extends TestBase {
 
 
     @org.testng.annotations.Test

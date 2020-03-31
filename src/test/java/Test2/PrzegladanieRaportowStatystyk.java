@@ -1,11 +1,9 @@
-package Tests;
+package Test2;
 
 import PageObjects.LoginPage;
-import Test2.TestBase;
 import io.qameta.allure.Description;
-import org.openqa.selenium.Alert;
 
-public class usunięcieWpisuZTabeliNormalizacji extends TestBase {
+public class PrzegladanieRaportowStatystyk extends TestBase {
 
 
     @org.testng.annotations.Test
@@ -17,14 +15,8 @@ public class usunięcieWpisuZTabeliNormalizacji extends TestBase {
         page.sendLogin();
         page.sendPassword();
         page.goSubmit();
-        page.konfiguracjaSp();
-        page.Normalizacja();
-        page.selectGrupa();
-        page.usunWpis();
-        page.saveGrupe();
-        Alert alert = driver.switchTo().alert();
-
-        alert.accept();
+        page.clickOnTabStatystyki();
 
     }
+
 }
