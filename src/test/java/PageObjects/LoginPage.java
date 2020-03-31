@@ -519,7 +519,7 @@ public class LoginPage {
     @Step("konf")
     public void checkKonfiguracjeArchiwalne() {
         String info = checkKonfiguracjaSp.getText();
-        assertEquals(info, "Załadowano konfiguracje archiwalną o id 28");
+        assertEquals(info, "Załadowano konfiguracje archiwalną o id 45");
         logger.info("Konfiguracja Sp");
     }
 
