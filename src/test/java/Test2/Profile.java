@@ -18,20 +18,28 @@ public class Profile extends TestBase {
 
         page.goToProfil();
         page.dodajProfil();
-        page.dodajIdProfil();
-        page.dodajOpisProfil();
-        page.clickOnProfil();
         page.dodajUslugeProfil();
-        page.clickOnRozwinUslugi();
         page.dodajNazwaUslugiProfil();
-        page.clickOnProfil();
-        page.dodajAdresProfil();
-        page.clickOnRozwinAdresy();
+        page.clickOnRozwinProfile();
+
+
         page.dodajNazwaAdresuProfil();
         page.dodajWageAdresuProfil();
+        page.clickOnEdytujProfil();
+        page.edytujIdProfil();
+        page.edytujNameProfil();
+        page.saveEdycjaProfil();
         page.zapiszProfil();
-        page.clickOnProfil();
-        page.usunProfil();
+        page.submitSaveProfil();
+
+
+        page.goToProfil();
+        page.dropDownProfil();
+        page.deleteProfile();
+        page.zapiszProfil();
+
+
+
 
 
     }

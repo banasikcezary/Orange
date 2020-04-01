@@ -302,18 +302,18 @@ public class LoginPage {
     private WebElement idProfil;
     @FindBy(id = "name_2")
     private WebElement opisProfil;
-    @FindBy(id = "add_service")
+    @FindBy(id = "add_service_button")
     private WebElement dodajUslugeProfil;
     @FindBy(id = "add_address")
     private WebElement dodajAdresProfil;
     @FindBy(id = "delete")
     private WebElement usunProfil;
-    @FindBy(id = "service_2_0")
+    @FindBy(id = "service_name_0")
     private WebElement dodajNazwaUslugiProfil;
-    @FindBy(xpath = "(//*[@id=\"address_2_0\"])[1]")
+    @FindBy(id = "address_0_0")
     private WebElement dodajNazwaAdresuProfil;
 
-    @FindBy(xpath = "(//*[@id=\"address_2_0\"])[2]")
+    @FindBy(id = "address_weight_0_0")
     private WebElement dodajWageAdresuProfil;
     @FindBy(id = "save")
     private WebElement zapiszProfil;
@@ -355,7 +355,7 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"address_2\"]/img")
     private WebElement rozwinadresy;
 
-    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[8]/table/tbody/tr[12]")
+    @FindBy(xpath = "//*[@id=\"main\"]/div/app-profiles/div/div/div[11]/table/tbody/tr[1]")
     private WebElement clickProfil;
 
     @FindBy(id = "id_1")
@@ -363,8 +363,25 @@ public class LoginPage {
     @FindBy(id = "dp_save_button")
     private WebElement saveButtonDp;
 
+    @FindBy(id = "open_folder_button_0")
+    private WebElement rozwinProfile;
+    @FindBy(id = "edit_profile")
+    private WebElement edytujProfil;
 
+    @FindBy(id = "edit_profile_id")
+    private WebElement editProfileId;
 
+    @FindBy(id = "edit_profile_name")
+    private WebElement editProfileName;
+
+    @FindBy(id = "edit_save_button")
+    private WebElement saveEdycjaProfil;
+    @FindBy(id = "chooseProfile")
+    private WebElement chooseProfil;
+    @FindBy(id = "delete_profile")
+    private WebElement deleteProfil;
+    @FindBy(id = "lb_save_button")
+    private WebElement submitSaveProfil;
 
 
     private WebDriver driver;
@@ -519,7 +536,7 @@ public class LoginPage {
     @Step("konf")
     public void checkKonfiguracjeArchiwalne() {
         String info = checkKonfiguracjaSp.getText();
-        assertEquals(info, "Załadowano konfiguracje archiwalną o id 45");
+        assertEquals(info, "Załadowano konfiguracje archiwalną o id 76");
         logger.info("Konfiguracja Sp");
     }
 
@@ -1087,12 +1104,13 @@ public WebElement x;
 
     @Step("Test wyrażeń regularnych")
     public void dodajNazwaAdresuProfil() {
-        dodajNazwaAdresuProfil.sendKeys("192.168.10.01");
+        dodajNazwaAdresuProfil.sendKeys("127.01.98.0");
         logger.info("Konfiguracja Sp");
     }
 
     @Step("Test wyrażeń regularnych")
     public void dodajWageAdresuProfil() {
+        dodajWageAdresuProfil.clear();
         dodajWageAdresuProfil.sendKeys("5");
         logger.info("Konfiguracja Sp");
     }
@@ -1244,5 +1262,52 @@ public WebElement x;
         logger.info("Konfiguracja Sp");
     }
 
+    @Step("Test wyrażeń regularnych")
+    public void clickOnRozwinProfile() {
+        rozwinProfile.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void clickOnEdytujProfil() {
+        edytujProfil.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujIdProfil() {
+        editProfileId.clear();
+        editProfileId.sendKeys("3");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void edytujNameProfil() {
+        editProfileName.clear();
+        editProfileName.sendKeys("3 numer profilu");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void saveEdycjaProfil() {
+        saveEdycjaProfil.click();
+        logger.info("Konfiguracja Sp");
+    }
+
+    @Step("konf")
+    public void dropDownProfil() {
+
+        Select normalizacjaDropDown = new Select(chooseProfil);
+        normalizacjaDropDown.selectByValue("3");
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void deleteProfile() {
+        deleteProfil.click();
+        logger.info("Konfiguracja Sp");
+    }
+    @Step("Test wyrażeń regularnych")
+    public void submitSaveProfil() {
+        submitSaveProfil.click();
+        logger.info("Konfiguracja Sp");
+    }
+
 }
+
 

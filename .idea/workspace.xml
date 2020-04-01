@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/Profile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +42,7 @@
       <recent name="C:\Users\User\IdeaProjects\Orange123\src\test\java\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRouting.asUserShouldBeAbleToLoggin">
-    <configuration name="C:/Users/User/IdeaProjects/Orange123/src/test/java/resources/all_tests_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Orange123" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/all_tests_suite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Profile.asUserShouldBeAbleToLoggin">
     <configuration name="Profile and 12 more" type="TestNG" nameIsGenerated="true">
       <module name="Orange123" />
       <useClassPathOnly />
@@ -79,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrzegladanieRaportowStatystyk.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Profile.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +80,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test2" />
-      <option name="MAIN_CLASS_NAME" value="Test2.PrzegladanieRaportowStatystyk" />
+      <option name="MAIN_CLASS_NAME" value="Test2.Profile" />
       <option name="METHOD_NAME" value="asUserShouldBeAbleToLoggin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -132,6 +124,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestPreconditions" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Orange123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="Test2.TestPreconditions" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRouting.asUserShouldBeAbleToLoggin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Orange123" />
       <extension name="coverage">
@@ -152,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Profile.asUserShouldBeAbleToLoggin" />
+        <item itemvalue="TestNG.TestPreconditions" />
         <item itemvalue="TestNG.TestRouting.asUserShouldBeAbleToLoggin" />
         <item itemvalue="TestNG.TestDenormalizacja.asUserShouldBeAbleToLoggin" />
         <item itemvalue="TestNG.TestDenormalizacja" />
-        <item itemvalue="TestNG.C:/Users/User/IdeaProjects/Orange123/src/test/java/resources/all_tests_suite.xml" />
-        <item itemvalue="TestNG.PrzegladanieRaportowStatystyk.asUserShouldBeAbleToLoggin" />
       </list>
     </recent_temporary>
   </component>
@@ -323,12 +332,12 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1584710553074" />
-    <state x="454" y="24" width="1886" height="1039" key="CommitChangelistDialog2" timestamp="1585661944575">
+    <state x="454" y="24" width="1886" height="1039" key="CommitChangelistDialog2" timestamp="1585664706689">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1890" y="-77" width="1886" height="1039" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323536310" />
     <state x="25" y="0" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585161412304" />
-    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1585661944575" />
+    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1585664706689" />
     <state x="-1828" y="14" width="1736" height="856" key="DiffContextDialog" timestamp="1585137939460">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
@@ -337,30 +346,30 @@
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
     <state x="-1180" y="197" key="FileChooserDialogImpl/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137222576" />
-    <state width="1557" height="227" key="GridCell.Tab.0.bottom" timestamp="1585661485646">
+    <state width="1557" height="227" key="GridCell.Tab.0.bottom" timestamp="1585731617884">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560761" />
     <state width="1557" height="250" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585216907949" />
-    <state width="1557" height="227" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585661485646" />
-    <state width="1557" height="227" key="GridCell.Tab.0.center" timestamp="1585661485645">
+    <state width="1557" height="227" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585731617884" />
+    <state width="1557" height="227" key="GridCell.Tab.0.center" timestamp="1585731617884">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560761" />
     <state width="1557" height="250" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585216907949" />
-    <state width="1557" height="227" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585661485645" />
-    <state width="1557" height="227" key="GridCell.Tab.0.left" timestamp="1585661485645">
+    <state width="1557" height="227" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585731617884" />
+    <state width="1557" height="227" key="GridCell.Tab.0.left" timestamp="1585731617884">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560760" />
     <state width="1557" height="250" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585216907948" />
-    <state width="1557" height="227" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585661485645" />
-    <state width="1557" height="227" key="GridCell.Tab.0.right" timestamp="1585661485645">
+    <state width="1557" height="227" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585731617884" />
+    <state width="1557" height="227" key="GridCell.Tab.0.right" timestamp="1585731617884">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560761" />
     <state width="1557" height="250" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585216907949" />
-    <state width="1557" height="227" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585661485645" />
+    <state width="1557" height="227" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585731617884" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1585577989490">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -381,22 +390,22 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560761" />
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1585577989490" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585661949384">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585664710371">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1450" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323543907" />
     <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585161416376" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1585661949384" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1585664710371" />
     <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog" timestamp="1585137160782">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
     <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137160782" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1585637608991">
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1585724006437">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1325" y="229" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585296689619" />
     <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585210034244" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585637608991" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585724006437" />
     <state x="-1230" y="197" key="extract.method.dialog" timestamp="1585136727470">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
@@ -411,10 +420,10 @@
     <state x="-1373" y="158" key="run.anything.popup/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585305907251" />
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585210993205" />
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1585574546311" />
-    <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup" timestamp="1585138056687">
-      <screen x="-1920" y="-78" width="1920" height="1040" />
+    <state x="163" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1585731040237">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1724" y="141" width="807" height="820" key="search.everywhere.popup/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585138056687" />
-    <state x="163" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1584962167929" />
+    <state x="163" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1585731040237" />
   </component>
 </project>
