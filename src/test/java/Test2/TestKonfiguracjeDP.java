@@ -30,13 +30,8 @@ public class TestKonfiguracjeDP extends TestBase {
         assertEquals(info, "Id nie może być puste");
         alert.accept();
 
-
-
          page.setNotUniqueIdDp();
 //W metodzie asercja unikalnego id
-
-
-
 
         page.chooseTypDp();
         page.dodajNazwaDp();
@@ -47,11 +42,9 @@ public class TestKonfiguracjeDP extends TestBase {
         page.dodajNowePolaczenieDp();
         page.DodajWageDrugiegoPolaczeniaDp();
 
-
          page.zapiszKonfiguracjeDp();
         assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: dp_routing_cc1 jest różna od 100");
         page.setSaveButtonDp();
-
 
         page.dodajWageDp();
         page.usunPierwszePolaczenieZListy();

@@ -27,17 +27,13 @@ public class TestRouting extends TestBase {
             assertEquals(page.checkerrorNorm(),"Puste id reguły routingu");
             page.submitError();
 
-
             page.dodajIdRoutinguInvalid();
             page.saveGrupe();
             Alert alert = driver.switchTo().alert();
             String info = alert.getText();
 
-
             assertEquals(info,"Id powinno być unikalne");
             alert.accept();
-
-
 
             page.dodajIdRoutingu();
             page.saveGrupe();
@@ -57,12 +53,10 @@ public class TestRouting extends TestBase {
             assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: 321 jest różna od 100");
             page.submitError();
 
-
             page.wagaWpisuRoutingu();
             page.saveGrupe();
             assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
             page.submitError();
-
 
             page.konfiguracjaSp();
             page.Routing();
@@ -72,10 +66,6 @@ public class TestRouting extends TestBase {
             page.DeleteSerwerRout();
             page.saveGrupe();
             page.submitError();
-
-
-
-
 
         // for (int i = 0; i < 4; i++) {
         // page.usunReguleRoutingu();

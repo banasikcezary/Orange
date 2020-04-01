@@ -30,7 +30,6 @@ public class TestKonfiguracjaLB extends TestBase {
         page.zmienAdresMaszynySip();
         page.setWeightLbIncorrect();
 
-
             try {
                 WebDriverWait wait = new WebDriverWait(driver, 5);
                 wait.until(ExpectedConditions.alertIsPresent());
@@ -42,13 +41,10 @@ public class TestKonfiguracjaLB extends TestBase {
             } catch (Exception e) {
             }
 
-
-
                page.setWeightLbCorrect();
         page.zmienPoziomLogowaniaModulu();
 
         page.zapisanieLoadBalancera();
-
 
     }
 }

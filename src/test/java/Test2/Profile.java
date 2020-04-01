@@ -22,7 +22,6 @@ public class Profile extends TestBase {
         page.dodajNazwaUslugiProfil();
         page.clickOnRozwinProfile();
 
-
         page.dodajNazwaAdresuProfil();
         page.dodajWageAdresuProfil();
         page.clickOnEdytujProfil();
@@ -31,7 +30,6 @@ public class Profile extends TestBase {
         page.saveEdycjaProfil();
         page.zapiszProfil();
         page.submitSaveProfil();
-
 
         page.goToProfil();
         page.dropDownProfil();

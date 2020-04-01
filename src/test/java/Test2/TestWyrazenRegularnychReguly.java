@@ -22,6 +22,6 @@ public class TestWyrazenRegularnychReguly extends TestBase {
         page.wyrazeniaregularne2();
         page.sendzamiennik();
         page.clickOnDodajButton();
-//////////////////////////////////////////////////
+
     }
 }

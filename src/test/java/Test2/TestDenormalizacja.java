@@ -24,9 +24,8 @@ public class TestDenormalizacja  extends TestBase {
             page.selectTablicaDe();
             page.dodajreguleDe();
             page.saveGrupe();
-         assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
-         page.submitError();
-
+            assertEquals(page.checkerrorNorm(),"Puste pole type w grupie denormalizacji o id:"+page.ostatniElementDropDownDenormalizacja());
+            page.submitError();
 
             page.selectTypeDe();
             page.saveGrupe();

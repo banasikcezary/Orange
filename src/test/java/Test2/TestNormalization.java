@@ -24,10 +24,10 @@ public class TestNormalization  extends TestBase {
             page.clickDodajGrupe();
             page.selectGrupa();
             page.dodajRegule();
-           page.saveGrupe();
+            page.saveGrupe();
             assertEquals(page.checkerrorNorm(),"Puste id Routingu dla grupy normalizacji id: "+page.ostatniElementDropDown());
 
-          page.submitError();
+            page.submitError();
 
             page.dropDownRouting();
             page.saveGrupe();
@@ -46,7 +46,6 @@ public class TestNormalization  extends TestBase {
             page.saveGrupe();
             assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
             page.submitError();
-
 
             page.Normalizacja();
             page.selectGrupa();
@@ -70,7 +69,6 @@ public class TestNormalization  extends TestBase {
             assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
             page.submitError();
 
-
             page.konfiguracjaSp();
             page.Normalizacja();
             page.selectGrupa();
@@ -78,7 +76,6 @@ public class TestNormalization  extends TestBase {
             page.saveGrupe();
             assertEquals(page.checkerrorNormSave(),"Konfiguracja została zapisana");
             page.submitError();
-
 
         }
     }
