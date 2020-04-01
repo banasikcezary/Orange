@@ -1088,6 +1088,7 @@ public WebElement x;
             alert.accept();
         } catch (Exception e) {
         }
+        clearIdDp.sendKeys(Keys.chord(Keys.CONTROL, "a"), "dp_routing_111");
 
     }
 

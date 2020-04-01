@@ -43,7 +43,7 @@ public class TestKonfiguracjeDP extends TestBase {
         page.DodajWageDrugiegoPolaczeniaDp();
 
          page.zapiszKonfiguracjeDp();
-        assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: dp_routing_cc1 jest różna od 100");
+        assertEquals(page.checkerrorNorm(),"Suma wag w routingu o id: dp_routing_111 jest różna od 100");
         page.setSaveButtonDp();
 
         page.dodajWageDp();
