@@ -481,7 +481,7 @@ public class LoginPage {
     @Step("Sprawdz konfiguracje archiwalne")
     public void checkKonfiguracjeArchiwalne() {
         String info = checkKonfiguracjaSp.getText();
-        assertEquals(info, "Załadowano konfiguracje archiwalną o id 76");
+        assertEquals(info, "Załadowano konfiguracje archiwalną o id 1");
         logger.info("Sprawdz konfiguracje archiwalne");
     }
 
