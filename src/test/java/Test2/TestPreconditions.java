@@ -11,10 +11,9 @@ public class TestPreconditions extends TestBase {
 
 
     @org.testng.annotations.Test
-    @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
+    @Description("Przetestowanie funkcjonalnosci dla Preconditions")
 
     public void asUserShouldBeAbleToLoggin() {
-        //final String ALERT_BLAD_WARUNEK_WSTEPNY = "Przy zapisie konfiguracji napotkano następujące błędy:\n" + "Puste pole methods w w warunkach wstępnych\n";
 
         LoginPage page = new LoginPage(driver);
 

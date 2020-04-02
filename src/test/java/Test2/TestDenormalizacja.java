@@ -10,7 +10,7 @@ public class TestDenormalizacja  extends TestBase {
 
 
         @org.testng.annotations.Test
-        @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
+        @Description("Przetestowanie funkcjonalnosci dla Denormalizacji")
 
         public void asUserShouldBeAbleToLoggin() {
             LoginPage page = new LoginPage(driver);

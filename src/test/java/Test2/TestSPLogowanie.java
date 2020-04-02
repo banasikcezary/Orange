@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 public class TestSPLogowanie extends TestBase {
 
     @Test
-    @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
+    @Description("Przetestowanie funkcjonalnosci dla SP logowanie")
 
     public void asUserShouldBeAbleToLoggin() {
         LoginPage page = new LoginPage(driver);

@@ -6,7 +6,7 @@ import io.qameta.allure.Description;
 public class TestKonfiguracjeArchiwalne extends TestBase {
 
     @org.testng.annotations.Test
-    @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
+    @Description("Przetestowanie funkcjonalnosci dla Konfiguracji archiwalnych")
 
     public void asUserShouldBeAbleToLoggin() {
         LoginPage page = new LoginPage(driver);

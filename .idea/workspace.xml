@@ -3,6 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d7bf81e9-c701-4510-8b49-1f84794a2ab3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/PrzegladanieRaportowStatystyk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/PrzegladanieRaportowStatystyk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestDenormalizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestDenormalizacja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjaLB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjaLB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjeArchiwalne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjeArchiwalne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjeDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestKonfiguracjeDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestLogowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestLogowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestNormalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestNormalization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestPreconditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestPreconditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestRouting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestRouting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestSPLogowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestSPLogowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestWyrazenRegularnychDopasowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestWyrazenRegularnychDopasowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2/TestWyrazenRegularnychReguly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test2/TestWyrazenRegularnychReguly.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585737067467</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="WersjaFinal 01.04.2020">
+      <created>1585737626272</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585737626272</updated>
+    </task>
+    <task id="LOCAL-00019" summary="WersjaFinal 01.04.2020">
+      <created>1585737756633</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585737756633</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,12 +401,12 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1584710553074" />
-    <state x="454" y="24" width="1886" height="1039" key="CommitChangelistDialog2" timestamp="1585737625546">
+    <state x="454" y="24" width="1886" height="1039" key="CommitChangelistDialog2" timestamp="1585737755498">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1890" y="-77" width="1886" height="1039" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323536310" />
     <state x="25" y="0" key="CommitChangelistDialog2/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585161412304" />
-    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1585737625546" />
+    <state x="454" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1585737755498" />
     <state x="-1828" y="14" width="1736" height="856" key="DiffContextDialog" timestamp="1585137939460">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
@@ -432,22 +459,22 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323560761" />
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1585577989490" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585737628252">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1585737758101">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1450" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585323543907" />
     <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585161416376" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1585737628252" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1585737758101" />
     <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog" timestamp="1585137160782">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>
     <state x="-1191" y="176" key="VcsDiffUtil.ChangesDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585137160782" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1585724006437">
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1585813107503">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-1325" y="229" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1920.-78.1920.1040@-1920.-78.1920.1040" timestamp="1585296689619" />
     <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/-1920.-78.1920.1040@0.0.1600.860" timestamp="1585210034244" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585724006437" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585813107503" />
     <state x="-1230" y="197" key="extract.method.dialog" timestamp="1585136727470">
       <screen x="-1920" y="-78" width="1920" height="1040" />
     </state>

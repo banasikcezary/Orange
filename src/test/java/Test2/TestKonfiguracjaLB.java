@@ -17,7 +17,7 @@ public class TestKonfiguracjaLB extends TestBase {
 
 
     @org.testng.annotations.Test
-    @Description("two tests are carried out as part of the test, the first sends an email, the second checks whether it has been delivered")
+    @Description("Przetestowanie funkcjonalnosci dla Konfiguracji LB")
 
     public void asUserShouldBeAbleToLoggin() {
         LoginPage page = new LoginPage(driver);
